@@ -1,0 +1,81 @@
+### auth-update-profile — happy path: update name only
+### auth: protect (any authenticated user); story: US4 / FR-011
+PATCH http://localhost:5000/api/auth/update-profile
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "name": "Medhat A. Atef"
+}
+
+# expect 200
+# {
+#   "success": true,
+#   "data": { "_id": "...", "name": "Medhat A. Atef", "email": "<unchanged>", "phone": null, "avatar": null, "role": "admin", ... }
+# }
+
+
+### auth-update-profile — happy path: update name + phone + avatar
+PATCH http://localhost:5000/api/auth/update-profile
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "name": "Medhat A. Atef",
+  "phone": "+201001112222",
+  "avatar": "https://cdn.example.com/avatars/medhat.png"
+}
+
+# expect 200 with all three fields persisted
+
+
+### auth-update-profile — no-op: email equal to current (case-insensitive)
+PATCH http://localhost:5000/api/auth/update-profile
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "name": "Medhat",
+  "email": "MEDHATATEF2004@GMAIL.COM"
+}
+
+# expect 200 — email field is treated as no-op when value matches current (case-insensitive); name is persisted
+
+
+### auth-update-profile — REJECTED: email change attempt (FR-011a)
+PATCH http://localhost:5000/api/auth/update-profile
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "name": "Medhat",
+  "email": "different@example.com"
+}
+
+# expect 400
+# {
+#   "success": false,
+#   "message": "email changes require the email-verification flow (not yet available)"
+# }
+# CRITICAL: name MUST NOT be persisted (atomic rejection per SC-005a)
+
+
+### auth-update-profile — unauthenticated
+PATCH http://localhost:5000/api/auth/update-profile
+Content-Type: application/json
+
+{
+  "name": "X"
+}
+
+# expect 401
+
+
+### auth-update-profile — empty body
+PATCH http://localhost:5000/api/auth/update-profile
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{}
+
+# expect 400 — Joi schema requires .min(1) (at least one writable field)

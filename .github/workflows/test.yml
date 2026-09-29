@@ -1,0 +1,111 @@
+name: Tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    services:
+      mongodb:
+        image: mongo:6
+        ports:
+          - 27017:27017
+        options: >-
+          --health-cmd="mongosh --eval 'db.runCommand({ping:1})'"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=5
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node 18
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Cache Server node_modules
+        uses: actions/cache@v4
+        with:
+          path: Server/node_modules
+          key: server-${{ hashFiles('Server/package-lock.json') }}
+
+      - name: Cache Client node_modules
+        uses: actions/cache@v4
+        with:
+          path: Client/node_modules
+          key: client-${{ hashFiles('Client/package-lock.json') }}
+
+      - name: Cache root node_modules
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: root-${{ hashFiles('package-lock.json') }}
+
+      - name: Cache mongodb-memory-server binary
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/mongodb-binaries
+          key: mms-${{ runner.os }}
+
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: pw-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Install Server deps
+        run: npm --prefix Server ci
+
+      - name: Install Client deps
+        run: npm --prefix Client ci
+
+      - name: Install root deps
+        run: npm ci
+
+      - name: Install Playwright chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Run Server Jest with coverage
+        run: npm --prefix Server run test:coverage
+        env:
+          CI: true
+
+      - name: Run Client Vitest with coverage
+        run: npm --prefix Client run test:coverage
+        env:
+          CI: true
+
+      - name: Run Playwright
+        run: npx playwright test
+        env:
+          CI: true
+          MONGODB_URI: mongodb://localhost:27017/smart_restaurant_e2e
+
+      - name: Upload Server coverage
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: server-coverage
+          path: Server/coverage/
+          retention-days: 14
+
+      - name: Upload Client coverage
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: client-coverage
+          path: Client/coverage/
+          retention-days: 14
+
+      - name: Upload Playwright report
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 14

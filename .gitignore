@@ -1,0 +1,25 @@
+node_modules/
+dist/
+build/
+.log
+.env
+.claude/
+!.env.docker.example
+__pycache__/
+*.pyc
+db-dump.json
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+.vscode/
+.idea/
+coverage/
+# Test artifacts (feature 006)
+auth.json
+Server/coverage/
+Client/coverage/
+playwright-report/
+test-results/
+# Local reference scratch file — contains example API keys, never commit.
+RG.txt

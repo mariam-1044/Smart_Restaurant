@@ -1,0 +1,63 @@
+### orders-integrity-report — happy path (admin)
+### auth: protect + restrictTo('admin'); story: US1 / FR-004, SC-002c
+GET http://localhost:5000/api/orders/integrity-report
+Authorization: Bearer {{adminToken}}
+
+# expect 200
+# {
+#   "success": true,
+#   "data": {
+#     "count": 3,
+#     "orderIds": [
+#       "65fae0c4d34a8f2e1b9c0001",
+#       "65fae0c4d34a8f2e1b9c0042",
+#       "65fae0c4d34a8f2e1b9c0117"
+#     ]
+#   }
+# }
+#
+# Response is read-only — calling this endpoint MUST NOT mutate any Order document.
+# Verified by SC-002c (before/after document hash comparison in the test).
+
+
+### orders-integrity-report — empty result (no legacy records)
+GET http://localhost:5000/api/orders/integrity-report
+Authorization: Bearer {{adminToken}}
+
+# expect 200
+# {
+#   "success": true,
+#   "data": { "count": 0, "orderIds": [] }
+# }
+
+
+### orders-integrity-report — staff role (forbidden)
+GET http://localhost:5000/api/orders/integrity-report
+Authorization: Bearer {{staffToken}}
+
+# expect 403
+# { "success": false, "message": "..." }
+
+
+### orders-integrity-report — customer role (forbidden)
+GET http://localhost:5000/api/orders/integrity-report
+Authorization: Bearer {{customerToken}}
+
+# expect 403
+
+
+### orders-integrity-report — unauthenticated
+GET http://localhost:5000/api/orders/integrity-report
+
+# expect 401
+
+
+### orders-integrity-report — repeated calls are idempotent
+GET http://localhost:5000/api/orders/integrity-report
+Authorization: Bearer {{adminToken}}
+
+###
+GET http://localhost:5000/api/orders/integrity-report
+Authorization: Bearer {{adminToken}}
+
+# Second response MUST equal the first. Read-only endpoint.

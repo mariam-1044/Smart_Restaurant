@@ -1,0 +1,60 @@
+services:
+  mongo:
+    image: mongo:7
+    restart: unless-stopped
+    volumes:
+      - mongo-data:/data/db
+
+  ml:
+    build: ./Server/ml_model_service
+    restart: unless-stopped
+    environment:
+      MONGO_URI: mongodb://mongo:27017/smart-restaurant
+      # RAG recipe generation (Qdrant + Gemini). Supplied via host env / .env —
+      # never hardcode secrets here.
+      GOOGLE_API_KEY: ${GOOGLE_API_KEY:-}
+      QDRANT_URL: ${QDRANT_URL:-}
+      QDRANT_API_KEY: ${QDRANT_API_KEY:-}
+      QDRANT_COLLECTION_NAME: ${QDRANT_COLLECTION_NAME:-}
+      RAG_TOP_K: ${RAG_TOP_K:-5}
+      # Threshold tuned for the 384-dim MiniLM collection (relevant matches ~0.4).
+      RAG_SCORE_THRESHOLD: ${RAG_SCORE_THRESHOLD:-0.3}
+      # Query embeddings MUST match the model the collection was built with.
+      RAG_EMBEDDING_PROVIDER: ${RAG_EMBEDDING_PROVIDER:-huggingface}
+      HF_EMBEDDING_MODEL: ${HF_EMBEDDING_MODEL:-sentence-transformers/all-MiniLM-L6-v2}
+      GOOGLE_EMBEDDING_MODEL: ${GOOGLE_EMBEDDING_MODEL:-models/text-embedding-004}
+      GOOGLE_RECIPE_MODEL: ${GOOGLE_RECIPE_MODEL:-models/gemini-2.5-flash}
+    depends_on:
+      - mongo
+
+  server:
+    build: ./Server
+    restart: unless-stopped
+    environment:
+      PORT: 8080
+      NODE_ENV: production
+      MONGO_URI: mongodb://mongo:27017/smart-restaurant
+      JWT_SECRET: ${JWT_SECRET:?set JWT_SECRET in .env}
+      JWT_EXPIRES_IN: 1d
+      ML_SERVICE_URL: http://ml:5002/v1
+      AI_FALLBACK_ENABLED: "true"
+      REORDER_LEAD_TIME_DAYS: "3"
+      REORDER_SAFETY_DAYS: "2"
+      CRON_TIMEZONE: UTC
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      AI_BASE_URL: ${AI_BASE_URL:-}
+      AI_MODEL: ${AI_MODEL:-}
+    depends_on:
+      - mongo
+      - ml
+
+  client:
+    build: ./Client
+    restart: unless-stopped
+    ports:
+      - "${CLIENT_PORT:-5173}:80"
+    depends_on:
+      - server
+
+volumes:
+  mongo-data:

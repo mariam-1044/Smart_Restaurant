@@ -1,0 +1,13 @@
+/* Legacy variable shim.
+ * The canonical design tokens now live in styles/index.css (Geatsu).
+ * This file is kept as a safety net for any dynamic import that still
+ * references it; the meaningful values come from index.css.
+ *
+ * Backward-compatible aliases — preserved so older selectors keep working.
+ */
+:root {
+  --green: var(--accent-green, #10B981);
+  --dark: #1f2937;
+  --gray: var(--bg-elevated, #F1F0EB);
+  --white: #ffffff;
+}

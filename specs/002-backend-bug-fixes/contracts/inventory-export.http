@@ -1,0 +1,91 @@
+### inventory-export — happy path: full inventory
+### auth: protect + restrictTo('admin','staff'); story: US5 / FR-006, FR-007, FR-008
+GET http://localhost:5000/api/inventory/export
+Authorization: Bearer {{adminToken}}
+
+# expect 200
+# Content-Type: text/csv; charset=utf-8
+# Content-Disposition: attachment; filename="inventory-20260427.csv"
+#
+# name,category,quantity,unit,minStock,costPerUnit,expiryDate,wasteQuantity
+# Tomato,,12.5,kg,5,3.00,2026-05-15,0.5
+# "San Marzano, Whole",,8,pcs,2,5.00,2026-06-01,0
+# "He said ""hello""",,2,l,1,7.50,2026-04-30,0
+#
+# (note: column 2 'category' is empty string — see data-model.md § 4 ⚠ for the spec/model gap)
+
+
+### inventory-export — search filter
+GET http://localhost:5000/api/inventory/export?search=tomato
+Authorization: Bearer {{adminToken}}
+
+# expect 200, body restricted to ingredients whose name matches /tomato/i
+# (same predicate as GET /api/inventory?search=tomato)
+
+
+### inventory-export — category filter
+GET http://localhost:5000/api/inventory/export?category=Produce
+Authorization: Bearer {{adminToken}}
+
+# expect 200, body restricted to that category
+# (same predicate as GET /api/inventory?category=Produce)
+# Currently a no-op given the Ingredient.js → category gap; will become functional once category is added (out of scope)
+
+
+### inventory-export — lowStock filter
+GET http://localhost:5000/api/inventory/export?lowStock=true
+Authorization: Bearer {{adminToken}}
+
+# expect 200, body equals inventoryService.getLowStockIngredients() result, in the same column shape
+# Set-equality verified by SC-008a
+
+
+### inventory-export — nearExpiry filter (default 7 days)
+GET http://localhost:5000/api/inventory/export?nearExpiry=true
+Authorization: Bearer {{adminToken}}
+
+# expect 200, body equals inventoryService.getNearExpiryIngredients(7) result
+
+
+### inventory-export — nearExpiry filter (custom days)
+GET http://localhost:5000/api/inventory/export?nearExpiry=true&days=14
+Authorization: Bearer {{adminToken}}
+
+# expect 200, body equals inventoryService.getNearExpiryIngredients(14) result
+
+
+### inventory-export — combined filters (lowStock + category)
+GET http://localhost:5000/api/inventory/export?lowStock=true&category=Produce
+Authorization: Bearer {{adminToken}}
+
+# expect 200; routing rule:
+#   primary call: getLowStockIngredients()
+#   post-filter: keep only category === 'Produce'
+
+
+### inventory-export — empty filtered subset
+GET http://localhost:5000/api/inventory/export?search=__no_such_ingredient__
+Authorization: Bearer {{adminToken}}
+
+# expect 200 with header-row-only body (FR-008)
+# body: "name,category,quantity,unit,minStock,costPerUnit,expiryDate,wasteQuantity\n"
+
+
+### inventory-export — staff role (allowed)
+GET http://localhost:5000/api/inventory/export
+Authorization: Bearer {{staffToken}}
+
+# expect 200 — staff has the same gate as the inventory read endpoints
+
+
+### inventory-export — customer role (forbidden)
+GET http://localhost:5000/api/inventory/export
+Authorization: Bearer {{customerToken}}
+
+# expect 403
+
+
+### inventory-export — unauthenticated
+GET http://localhost:5000/api/inventory/export
+
+# expect 401

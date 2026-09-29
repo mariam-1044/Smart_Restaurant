@@ -1,0 +1,648 @@
+{"level":"error","message":"basket.cron: refresh failed code=inference_unavailable","timestamp":"2026-04-26T14:40:22.955Z"}
+{"level":"error","message":"basket.cron: refresh failed code=inference_unavailable","timestamp":"2026-04-26T20:19:34.910Z"}
+{"level":"error","message":"basket.cron: refresh failed code=inference_unavailable","timestamp":"2026-04-26T20:19:46.297Z"}
+{"level":"error","message":"basket.cron: refresh failed code=inference_unavailable","timestamp":"2026-04-26T20:20:42.865Z"}
+{"level":"error","message":"basket.cron: refresh failed code=inference_unavailable","timestamp":"2026-04-26T20:21:56.601Z"}
+{"level":"error","message":"audit.recordInference failed: boom","timestamp":"2026-04-26T20:21:55.977Z"}
+{"level":"error","message":"forecast error: boom","timestamp":"2026-04-26T20:21:57.447Z"}
+{"level":"error","message":"recipe error: boom","timestamp":"2026-04-26T20:21:57.464Z"}
+{"level":"error","message":"marketBasket error: boom","timestamp":"2026-04-26T20:21:57.469Z"}
+{"level":"error","message":"recommendation.controller error: boom","timestamp":"2026-04-26T20:21:57.475Z"}
+{"level":"error","message":"pricing.controller error: boom","timestamp":"2026-04-26T20:21:57.509Z"}
+{"level":"error","message":"endorsement summary error: boom","timestamp":"2026-04-26T20:21:57.512Z"}
+{"level":"error","message":"Order Creation Error: orderData.items is not iterable","timestamp":"2026-04-27T06:00:57.845Z"}
+{"level":"error","message":"POS transaction failed: orderData.items is not iterable","timestamp":"2026-04-27T06:00:57.848Z"}
+{"level":"error","message":"Controller Error [processPOSTransaction]: orderData.items is not iterable","timestamp":"2026-04-27T06:00:57.849Z"}
+{"level":"error","message":"forecast error: boom","timestamp":"2026-04-27T06:01:03.120Z"}
+{"level":"error","message":"recipe error: boom","timestamp":"2026-04-27T06:01:03.141Z"}
+{"level":"error","message":"marketBasket error: boom","timestamp":"2026-04-27T06:01:03.151Z"}
+{"level":"error","message":"recommendation.controller error: boom","timestamp":"2026-04-27T06:01:03.169Z"}
+{"level":"error","message":"pricing.controller error: boom","timestamp":"2026-04-27T06:01:03.249Z"}
+{"level":"error","message":"endorsement summary error: boom","timestamp":"2026-04-27T06:01:03.260Z"}
+{"level":"error","message":"audit.recordInference failed: boom","timestamp":"2026-04-27T06:01:08.653Z"}
+{"level":"error","message":"basket.cron: refresh failed code=inference_unavailable","timestamp":"2026-04-27T06:01:11.881Z"}
+{"level":"error","message":"Order Creation Error: orderData.items is not iterable","timestamp":"2026-04-27T06:01:29.978Z"}
+{"level":"error","message":"POS transaction failed: orderData.items is not iterable","timestamp":"2026-04-27T06:01:29.981Z"}
+{"level":"error","message":"Controller Error [processPOSTransaction]: orderData.items is not iterable","timestamp":"2026-04-27T06:01:29.983Z"}
+{"level":"error","message":"ETL exportToCSV Error: report.salesTrends.forEach is not a function","timestamp":"2026-04-27T06:02:00.391Z"}
+{"level":"error","message":"Order Creation Error: orderData.items is not iterable","timestamp":"2026-04-27T06:02:00.677Z"}
+{"level":"error","message":"POS transaction failed: orderData.items is not iterable","timestamp":"2026-04-27T06:02:00.680Z"}
+{"level":"error","message":"Controller Error [processPOSTransaction]: orderData.items is not iterable","timestamp":"2026-04-27T06:02:00.682Z"}
+{"level":"error","message":"ETL exportToCSV Error: report.salesTrends.forEach is not a function","timestamp":"2026-04-27T06:02:18.517Z"}
+{"level":"error","message":"Order Creation Error: orderData.items is not iterable","timestamp":"2026-04-27T06:02:18.810Z"}
+{"level":"error","message":"POS transaction failed: orderData.items is not iterable","timestamp":"2026-04-27T06:02:18.812Z"}
+{"level":"error","message":"Controller Error [processPOSTransaction]: orderData.items is not iterable","timestamp":"2026-04-27T06:02:18.814Z"}
+{"level":"error","message":"Order Creation Error: orderData.items is not iterable","timestamp":"2026-04-27T06:02:21.756Z"}
+{"level":"error","message":"POS transaction failed: orderData.items is not iterable","timestamp":"2026-04-27T06:02:21.759Z"}
+{"level":"error","message":"Controller Error [processPOSTransaction]: orderData.items is not iterable","timestamp":"2026-04-27T06:02:21.760Z"}
+{"level":"error","message":"forecast error: boom","timestamp":"2026-04-27T06:02:22.826Z"}
+{"level":"error","message":"recipe error: boom","timestamp":"2026-04-27T06:02:22.856Z"}
+{"level":"error","message":"marketBasket error: boom","timestamp":"2026-04-27T06:02:22.866Z"}
+{"level":"error","message":"recommendation.controller error: boom","timestamp":"2026-04-27T06:02:22.887Z"}
+{"level":"error","message":"pricing.controller error: boom","timestamp":"2026-04-27T06:02:22.973Z"}
+{"level":"error","message":"endorsement summary error: boom","timestamp":"2026-04-27T06:02:22.982Z"}
+{"level":"error","message":"basket.cron: refresh failed code=inference_unavailable","timestamp":"2026-04-27T06:02:28.549Z"}
+{"level":"error","message":"audit.recordInference failed: boom","timestamp":"2026-04-27T06:02:28.624Z"}
+{"level":"error","message":"ETL exportToCSV Error: report.salesTrends.forEach is not a function","timestamp":"2026-04-27T06:29:04.324Z"}
+{"level":"error","message":"Order Creation Error: orderData.items is not iterable","timestamp":"2026-04-27T06:29:07.399Z"}
+{"level":"error","message":"POS transaction failed: orderData.items is not iterable","timestamp":"2026-04-27T06:29:07.402Z"}
+{"level":"error","message":"Controller Error [processPOSTransaction]: orderData.items is not iterable","timestamp":"2026-04-27T06:29:07.403Z"}
+{"level":"error","message":"forecast error: boom","timestamp":"2026-04-27T06:29:11.183Z"}
+{"level":"error","message":"recipe error: boom","timestamp":"2026-04-27T06:29:11.220Z"}
+{"level":"error","message":"marketBasket error: boom","timestamp":"2026-04-27T06:29:11.231Z"}
+{"level":"error","message":"recommendation.controller error: boom","timestamp":"2026-04-27T06:29:11.249Z"}
+{"level":"error","message":"pricing.controller error: boom","timestamp":"2026-04-27T06:29:11.342Z"}
+{"level":"error","message":"endorsement summary error: boom","timestamp":"2026-04-27T06:29:11.352Z"}
+{"level":"error","message":"audit.recordInference failed: boom","timestamp":"2026-04-27T06:29:14.352Z"}
+{"level":"error","message":"basket.cron: refresh failed code=inference_unavailable","timestamp":"2026-04-27T06:29:14.424Z"}
+{"level":"error","message":"ETL exportToCSV Error: report.salesTrends.forEach is not a function","timestamp":"2026-04-27T06:32:18.400Z"}
+{"level":"error","message":"Order Creation Error: orderData.items is not iterable","timestamp":"2026-04-27T06:32:21.492Z"}
+{"level":"error","message":"POS transaction failed: orderData.items is not iterable","timestamp":"2026-04-27T06:32:21.495Z"}
+{"level":"error","message":"Controller Error [processPOSTransaction]: orderData.items is not iterable","timestamp":"2026-04-27T06:32:21.497Z"}
+{"level":"error","message":"forecast error: boom","timestamp":"2026-04-27T06:32:27.406Z"}
+{"level":"error","message":"recipe error: boom","timestamp":"2026-04-27T06:32:27.432Z"}
+{"level":"error","message":"marketBasket error: boom","timestamp":"2026-04-27T06:32:27.458Z"}
+{"level":"error","message":"recommendation.controller error: boom","timestamp":"2026-04-27T06:32:27.482Z"}
+{"level":"error","message":"pricing.controller error: boom","timestamp":"2026-04-27T06:32:27.573Z"}
+{"level":"error","message":"endorsement summary error: boom","timestamp":"2026-04-27T06:32:27.583Z"}
+{"level":"error","message":"basket.cron: refresh failed code=inference_unavailable","timestamp":"2026-04-27T06:32:30.151Z"}
+{"level":"error","message":"audit.recordInference failed: boom","timestamp":"2026-04-27T06:32:30.268Z"}
+{"level":"error","message":"Manual Waste Recording Error: Insufficient quantity to waste","timestamp":"2026-05-04T01:53:06.165Z"}
+{"level":"error","message":"Order Creation Error: Dish 69f7fc0254b707d27d623467 is not available or does not exist.","timestamp":"2026-05-04T01:53:06.246Z"}
+{"level":"error","message":"POS transaction failed: Dish 69f7fc0254b707d27d623467 is not available or does not exist.","timestamp":"2026-05-04T01:53:06.248Z"}
+{"level":"error","message":"Order Creation Error: Dish 69f7fc02656b73077cef218d is not available or does not exist.","timestamp":"2026-05-04T01:53:06.897Z"}
+{"level":"error","message":"basket.cron: refresh failed code=inference_unavailable","timestamp":"2026-05-04T01:53:07.012Z"}
+{"level":"error","message":"basket.cron: refresh failed code=inference_unavailable","timestamp":"2026-05-04T01:53:44.853Z"}
+{"level":"error","message":"Manual Waste Recording Error: Insufficient quantity to waste","timestamp":"2026-05-04T01:53:45.468Z"}
+{"level":"error","message":"Order Creation Error: Dish 69f7fc2915ec4da12a2af35f is not available or does not exist.","timestamp":"2026-05-04T01:53:45.652Z"}
+{"level":"error","message":"POS transaction failed: Dish 69f7fc2915ec4da12a2af35f is not available or does not exist.","timestamp":"2026-05-04T01:53:45.653Z"}
+{"level":"error","message":"Order Creation Error: Dish 69f7fc2a6d10cb744a732cb7 is not available or does not exist.","timestamp":"2026-05-04T01:53:46.193Z"}
+{"level":"error","message":"ETL exportToCSV Error: report.salesTrends.forEach is not a function","timestamp":"2026-05-04T01:54:48.051Z"}
+{"level":"error","message":"Order Creation Error: orderData.items is not iterable","timestamp":"2026-05-04T01:54:49.554Z"}
+{"level":"error","message":"POS transaction failed: orderData.items is not iterable","timestamp":"2026-05-04T01:54:49.560Z"}
+{"level":"error","message":"Controller Error [processPOSTransaction]: orderData.items is not iterable","timestamp":"2026-05-04T01:54:49.561Z"}
+{"level":"error","message":"Order Creation Error: Dish 69f7fc6a716a36dadbd809c9 is not available or does not exist.","timestamp":"2026-05-04T01:54:50.500Z"}
+{"level":"error","message":"POS transaction failed: Dish 69f7fc6a716a36dadbd809c9 is not available or does not exist.","timestamp":"2026-05-04T01:54:50.502Z"}
+{"level":"error","message":"Manual Waste Recording Error: Insufficient quantity to waste","timestamp":"2026-05-04T01:54:50.726Z"}
+{"level":"error","message":"Order Creation Error: Dish 69f7fc6aeaf35f258fb74cdf is not available or does not exist.","timestamp":"2026-05-04T01:54:50.964Z"}
+{"level":"error","message":"basket.cron: refresh failed code=inference_unavailable","timestamp":"2026-05-04T01:54:53.385Z"}
+{"level":"error","message":"audit.recordInference failed: boom","timestamp":"2026-05-04T01:54:53.695Z"}
+{"level":"error","message":"forecast error: Operation `dishes.findOne()` buffering timed out after 10000ms","timestamp":"2026-05-04T01:54:58.833Z"}
+{"level":"error","message":"pricing.controller error: Operation `dishes.findOne()` buffering timed out after 10000ms","timestamp":"2026-05-04T01:54:59.362Z"}
+{"level":"error","message":"forecast error: Operation `dishes.findOne()` buffering timed out after 10000ms","timestamp":"2026-05-04T01:55:03.853Z"}
+{"level":"error","message":"forecast error: boom","timestamp":"2026-05-04T01:55:13.315Z"}
+{"level":"error","message":"forecast error: Operation `dishes.findOne()` buffering timed out after 10000ms","timestamp":"2026-05-04T01:55:23.333Z"}
+{"level":"error","message":"recipe error: boom","timestamp":"2026-05-04T01:55:23.339Z"}
+{"level":"error","message":"marketBasket error: boom","timestamp":"2026-05-04T01:55:23.343Z"}
+{"level":"error","message":"recommendation.controller error: boom","timestamp":"2026-05-04T01:55:23.349Z"}
+{"level":"error","message":"pricing.controller error: boom","timestamp":"2026-05-04T01:55:23.377Z"}
+{"level":"error","message":"endorsement summary error: boom","timestamp":"2026-05-04T01:55:23.382Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T01:57:07.143Z"}
+{"level":"error","message":"ETL exportToCSV Error: report.salesTrends.forEach is not a function","timestamp":"2026-05-04T01:57:07.730Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T01:57:07.774Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T01:57:08.998Z"}
+{"level":"error","message":"Order Creation Error: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-04T01:57:12.161Z"}
+{"level":"error","message":"Error placing customer order: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-04T01:57:12.174Z"}
+{"level":"error","message":"Order Creation Error: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-04T01:57:41.335Z"}
+{"level":"error","message":"Error placing customer order: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-04T01:57:41.336Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T01:58:13.366Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T01:58:13.874Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T01:58:14.867Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T01:59:46.429Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T01:59:46.928Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T01:59:47.878Z"}
+{"level":"error","message":"ETL exportToCSV Error: report.salesTrends.forEach is not a function","timestamp":"2026-05-04T02:00:03.658Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T02:00:20.710Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T02:00:21.256Z"}
+{"level":"error","message":"ETL exportToCSV Error: report.salesTrends.forEach is not a function","timestamp":"2026-05-04T02:00:21.259Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T02:00:22.265Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T02:01:10.758Z"}
+{"level":"error","message":"ETL exportToCSV Error: report.salesTrends.forEach is not a function","timestamp":"2026-05-04T02:01:11.198Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T02:01:11.258Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T02:01:12.223Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T02:01:55.877Z"}
+{"level":"error","message":"ETL exportToCSV Error: report.salesTrends.forEach is not a function","timestamp":"2026-05-04T02:01:56.365Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T02:01:56.418Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T02:01:57.379Z"}
+{"level":"error","message":"ETL exportToCSV Error: report.salesTrends.forEach is not a function","timestamp":"2026-05-04T02:02:48.375Z"}
+{"level":"error","message":"Order Creation Error: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-04T02:02:49.793Z"}
+{"level":"error","message":"Error placing customer order: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-04T02:02:49.795Z"}
+{"level":"error","message":"ETL exportToCSV Error: report.salesTrends.forEach is not a function","timestamp":"2026-05-04T02:03:17.253Z"}
+{"level":"error","message":"Order Creation Error: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-04T02:03:21.817Z"}
+{"level":"error","message":"Error placing customer order: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-04T02:03:21.828Z"}
+{"level":"error","message":"ETL exportToCSV Error: report.salesTrends.forEach is not a function","timestamp":"2026-05-04T02:03:46.353Z"}
+{"level":"error","message":"Order Creation Error: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-04T02:04:32.208Z"}
+{"level":"error","message":"Error placing customer order: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-04T02:04:32.209Z"}
+{"level":"error","message":"Order Creation Error: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-04T02:05:04.284Z"}
+{"level":"error","message":"Error placing customer order: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-04T02:05:04.297Z"}
+{"level":"error","message":"pricing.controller error: Operation `dishes.findOne()` buffering timed out after 10000ms","timestamp":"2026-05-04T02:05:07.435Z"}
+{"level":"error","message":"forecast error: Operation `dishes.findOne()` buffering timed out after 10000ms","timestamp":"2026-05-04T02:05:07.513Z"}
+{"level":"error","message":"forecast error: Operation `dishes.findOne()` buffering timed out after 10000ms","timestamp":"2026-05-04T02:05:07.546Z"}
+{"level":"error","message":"ETL exportToCSV Error: report.salesTrends.forEach is not a function","timestamp":"2026-05-04T02:05:08.953Z"}
+{"level":"error","message":"Order Creation Error: Dish 69f7fed6f717356a4ac5253c is not available or does not exist.","timestamp":"2026-05-04T02:05:10.437Z"}
+{"level":"error","message":"Order Creation Error: orderData.items is not iterable","timestamp":"2026-05-04T02:05:10.518Z"}
+{"level":"error","message":"POS transaction failed: orderData.items is not iterable","timestamp":"2026-05-04T02:05:10.521Z"}
+{"level":"error","message":"Controller Error [processPOSTransaction]: orderData.items is not iterable","timestamp":"2026-05-04T02:05:10.522Z"}
+{"level":"error","message":"Manual Waste Recording Error: Insufficient quantity to waste","timestamp":"2026-05-04T02:05:12.129Z"}
+{"level":"error","message":"Order Creation Error: Dish 69f7fed8616961eea60be097 is not available or does not exist.","timestamp":"2026-05-04T02:05:12.278Z"}
+{"level":"error","message":"POS transaction failed: Dish 69f7fed8616961eea60be097 is not available or does not exist.","timestamp":"2026-05-04T02:05:12.279Z"}
+{"level":"error","message":"basket.cron: refresh failed code=inference_unavailable","timestamp":"2026-05-04T02:05:13.218Z"}
+{"level":"error","message":"audit.recordInference failed: boom","timestamp":"2026-05-04T02:05:13.214Z"}
+{"level":"error","message":"forecast error: boom","timestamp":"2026-05-04T02:05:17.500Z"}
+{"level":"error","message":"forecast error: Operation `dishes.findOne()` buffering timed out after 10000ms","timestamp":"2026-05-04T02:05:27.529Z"}
+{"level":"error","message":"recipe error: boom","timestamp":"2026-05-04T02:05:27.540Z"}
+{"level":"error","message":"marketBasket error: boom","timestamp":"2026-05-04T02:05:27.546Z"}
+{"level":"error","message":"recommendation.controller error: boom","timestamp":"2026-05-04T02:05:27.556Z"}
+{"level":"error","message":"pricing.controller error: boom","timestamp":"2026-05-04T02:05:27.588Z"}
+{"level":"error","message":"endorsement summary error: boom","timestamp":"2026-05-04T02:05:27.594Z"}
+{"level":"error","message":"Order Creation Error: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-04T02:05:44.102Z"}
+{"level":"error","message":"Error placing customer order: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-04T02:05:44.113Z"}
+{"level":"error","message":"pricing.controller error: Operation `dishes.findOne()` buffering timed out after 10000ms","timestamp":"2026-05-04T02:05:47.407Z"}
+{"level":"error","message":"forecast error: Operation `dishes.findOne()` buffering timed out after 10000ms","timestamp":"2026-05-04T02:05:47.486Z"}
+{"level":"error","message":"forecast error: Operation `dishes.findOne()` buffering timed out after 10000ms","timestamp":"2026-05-04T02:05:47.501Z"}
+{"level":"error","message":"Order Creation Error: Dish 69f7fefd1dbeff1fd4ace5e2 is not available or does not exist.","timestamp":"2026-05-04T02:05:49.843Z"}
+{"level":"error","message":"ETL exportToCSV Error: report.salesTrends.forEach is not a function","timestamp":"2026-05-04T02:05:50.363Z"}
+{"level":"error","message":"Order Creation Error: Dish 69f7fefe058f31b2b3dedaa6 is not available or does not exist.","timestamp":"2026-05-04T02:05:50.669Z"}
+{"level":"error","message":"POS transaction failed: Dish 69f7fefe058f31b2b3dedaa6 is not available or does not exist.","timestamp":"2026-05-04T02:05:50.670Z"}
+{"level":"error","message":"Manual Waste Recording Error: Insufficient quantity to waste","timestamp":"2026-05-04T02:05:51.242Z"}
+{"level":"error","message":"Order Creation Error: orderData.items is not iterable","timestamp":"2026-05-04T02:05:51.316Z"}
+{"level":"error","message":"POS transaction failed: orderData.items is not iterable","timestamp":"2026-05-04T02:05:51.320Z"}
+{"level":"error","message":"Controller Error [processPOSTransaction]: orderData.items is not iterable","timestamp":"2026-05-04T02:05:51.321Z"}
+{"level":"error","message":"audit.recordInference failed: boom","timestamp":"2026-05-04T02:05:54.412Z"}
+{"level":"error","message":"basket.cron: refresh failed code=inference_unavailable","timestamp":"2026-05-04T02:05:54.409Z"}
+{"level":"error","message":"forecast error: boom","timestamp":"2026-05-04T02:05:57.524Z"}
+{"level":"error","message":"forecast error: Operation `dishes.findOne()` buffering timed out after 10000ms","timestamp":"2026-05-04T02:06:07.548Z"}
+{"level":"error","message":"recipe error: boom","timestamp":"2026-05-04T02:06:07.556Z"}
+{"level":"error","message":"marketBasket error: boom","timestamp":"2026-05-04T02:06:07.560Z"}
+{"level":"error","message":"recommendation.controller error: boom","timestamp":"2026-05-04T02:06:07.569Z"}
+{"level":"error","message":"pricing.controller error: boom","timestamp":"2026-05-04T02:06:07.601Z"}
+{"level":"error","message":"endorsement summary error: boom","timestamp":"2026-05-04T02:06:07.606Z"}
+{"level":"error","message":"Order Creation Error: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-04T02:07:01.535Z"}
+{"level":"error","message":"Error placing customer order: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-04T02:07:01.547Z"}
+{"level":"error","message":"pricing.controller error: Operation `dishes.findOne()` buffering timed out after 10000ms","timestamp":"2026-05-04T02:07:04.924Z"}
+{"level":"error","message":"forecast error: Operation `dishes.findOne()` buffering timed out after 10000ms","timestamp":"2026-05-04T02:07:04.971Z"}
+{"level":"error","message":"forecast error: Operation `dishes.findOne()` buffering timed out after 10000ms","timestamp":"2026-05-04T02:07:05.021Z"}
+{"level":"error","message":"Order Creation Error: Dish 69f7ff4b73eae5c950204b11 is not available or does not exist.","timestamp":"2026-05-04T02:07:07.087Z"}
+{"level":"error","message":"ETL exportToCSV Error: report.salesTrends.forEach is not a function","timestamp":"2026-05-04T02:07:07.186Z"}
+{"level":"error","message":"Order Creation Error: orderData.items is not iterable","timestamp":"2026-05-04T02:07:07.633Z"}
+{"level":"error","message":"POS transaction failed: orderData.items is not iterable","timestamp":"2026-05-04T02:07:07.634Z"}
+{"level":"error","message":"Controller Error [processPOSTransaction]: orderData.items is not iterable","timestamp":"2026-05-04T02:07:07.636Z"}
+{"level":"error","message":"Manual Waste Recording Error: Insufficient quantity to waste","timestamp":"2026-05-04T02:07:08.496Z"}
+{"level":"error","message":"Order Creation Error: Dish 69f7ff4c45806f617b35615c is not available or does not exist.","timestamp":"2026-05-04T02:07:08.602Z"}
+{"level":"error","message":"POS transaction failed: Dish 69f7ff4c45806f617b35615c is not available or does not exist.","timestamp":"2026-05-04T02:07:08.603Z"}
+{"level":"error","message":"audit.recordInference failed: boom","timestamp":"2026-05-04T02:07:10.550Z"}
+{"level":"error","message":"basket.cron: refresh failed code=inference_unavailable","timestamp":"2026-05-04T02:07:10.579Z"}
+{"level":"error","message":"forecast error: boom","timestamp":"2026-05-04T02:07:14.980Z"}
+{"level":"error","message":"forecast error: Operation `dishes.findOne()` buffering timed out after 10000ms","timestamp":"2026-05-04T02:07:25.007Z"}
+{"level":"error","message":"recipe error: boom","timestamp":"2026-05-04T02:07:25.014Z"}
+{"level":"error","message":"marketBasket error: boom","timestamp":"2026-05-04T02:07:25.018Z"}
+{"level":"error","message":"recommendation.controller error: boom","timestamp":"2026-05-04T02:07:25.027Z"}
+{"level":"error","message":"pricing.controller error: boom","timestamp":"2026-05-04T02:07:25.057Z"}
+{"level":"error","message":"endorsement summary error: boom","timestamp":"2026-05-04T02:07:25.062Z"}
+{"level":"error","message":"Order Creation Error: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-04T02:07:41.874Z"}
+{"level":"error","message":"Error placing customer order: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-04T02:07:41.888Z"}
+{"level":"error","message":"pricing.controller error: Operation `dishes.findOne()` buffering timed out after 10000ms","timestamp":"2026-05-04T02:07:45.301Z"}
+{"level":"error","message":"forecast error: Operation `dishes.findOne()` buffering timed out after 10000ms","timestamp":"2026-05-04T02:07:45.330Z"}
+{"level":"error","message":"forecast error: Operation `dishes.findOne()` buffering timed out after 10000ms","timestamp":"2026-05-04T02:07:45.330Z"}
+{"level":"error","message":"Order Creation Error: Dish 69f7ff73faccf4d5b45511b6 is not available or does not exist.","timestamp":"2026-05-04T02:07:47.179Z"}
+{"level":"error","message":"ETL exportToCSV Error: report.salesTrends.forEach is not a function","timestamp":"2026-05-04T02:07:48.107Z"}
+{"level":"error","message":"Order Creation Error: Dish 69f7ff751c30cc09e7215a05 is not available or does not exist.","timestamp":"2026-05-04T02:07:49.242Z"}
+{"level":"error","message":"POS transaction failed: Dish 69f7ff751c30cc09e7215a05 is not available or does not exist.","timestamp":"2026-05-04T02:07:49.244Z"}
+{"level":"error","message":"Order Creation Error: orderData.items is not iterable","timestamp":"2026-05-04T02:07:49.590Z"}
+{"level":"error","message":"POS transaction failed: orderData.items is not iterable","timestamp":"2026-05-04T02:07:49.594Z"}
+{"level":"error","message":"Controller Error [processPOSTransaction]: orderData.items is not iterable","timestamp":"2026-05-04T02:07:49.595Z"}
+{"level":"error","message":"Manual Waste Recording Error: Insufficient quantity to waste","timestamp":"2026-05-04T02:07:50.165Z"}
+{"level":"error","message":"basket.cron: refresh failed code=inference_unavailable","timestamp":"2026-05-04T02:07:51.102Z"}
+{"level":"error","message":"audit.recordInference failed: boom","timestamp":"2026-05-04T02:07:51.110Z"}
+{"level":"error","message":"forecast error: boom","timestamp":"2026-05-04T02:07:55.229Z"}
+{"level":"error","message":"forecast error: Operation `dishes.findOne()` buffering timed out after 10000ms","timestamp":"2026-05-04T02:08:05.266Z"}
+{"level":"error","message":"recipe error: boom","timestamp":"2026-05-04T02:08:05.272Z"}
+{"level":"error","message":"marketBasket error: boom","timestamp":"2026-05-04T02:08:05.276Z"}
+{"level":"error","message":"recommendation.controller error: boom","timestamp":"2026-05-04T02:08:05.284Z"}
+{"level":"error","message":"pricing.controller error: boom","timestamp":"2026-05-04T02:08:05.315Z"}
+{"level":"error","message":"endorsement summary error: boom","timestamp":"2026-05-04T02:08:05.319Z"}
+{"level":"error","message":"Order Creation Error: Dish 69f7ff9801eb2c7f2bdfb45c is not available or does not exist.","timestamp":"2026-05-04T02:08:24.291Z"}
+{"level":"error","message":"Manual Waste Recording Error: Insufficient quantity to waste","timestamp":"2026-05-04T02:08:25.568Z"}
+{"level":"error","message":"Order Creation Error: Dish 69f7ff9bdaf283b5bc5f41e6 is not available or does not exist.","timestamp":"2026-05-04T02:08:27.932Z"}
+{"level":"error","message":"POS transaction failed: Dish 69f7ff9bdaf283b5bc5f41e6 is not available or does not exist.","timestamp":"2026-05-04T02:08:27.932Z"}
+{"level":"error","message":"Order Creation Error: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-04T02:08:31.076Z"}
+{"level":"error","message":"Error placing customer order: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-04T02:08:31.088Z"}
+{"level":"error","message":"Order Creation Error: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-04T02:36:51.327Z"}
+{"level":"error","message":"Error placing customer order: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-04T02:36:51.342Z"}
+{"level":"error","message":"pricing.controller error: Operation `dishes.findOne()` buffering timed out after 10000ms","timestamp":"2026-05-04T02:36:54.150Z"}
+{"level":"error","message":"forecast error: Operation `dishes.findOne()` buffering timed out after 10000ms","timestamp":"2026-05-04T02:36:54.211Z"}
+{"level":"error","message":"forecast error: Operation `dishes.findOne()` buffering timed out after 10000ms","timestamp":"2026-05-04T02:36:54.227Z"}
+{"level":"error","message":"Order Creation Error: Dish 69f8064716854c373134f56f is not available or does not exist.","timestamp":"2026-05-04T02:36:55.471Z"}
+{"level":"error","message":"Order Creation Error: orderData.items is not iterable","timestamp":"2026-05-04T02:36:56.262Z"}
+{"level":"error","message":"POS transaction failed: orderData.items is not iterable","timestamp":"2026-05-04T02:36:56.266Z"}
+{"level":"error","message":"Controller Error [processPOSTransaction]: orderData.items is not iterable","timestamp":"2026-05-04T02:36:56.267Z"}
+{"level":"error","message":"ETL exportToCSV Error: report.salesTrends.forEach is not a function","timestamp":"2026-05-04T02:36:56.482Z"}
+{"level":"error","message":"Order Creation Error: Dish 69f80649cb9d4638948ae3d8 is not available or does not exist.","timestamp":"2026-05-04T02:36:57.892Z"}
+{"level":"error","message":"POS transaction failed: Dish 69f80649cb9d4638948ae3d8 is not available or does not exist.","timestamp":"2026-05-04T02:36:57.894Z"}
+{"level":"error","message":"basket.cron: refresh failed code=inference_unavailable","timestamp":"2026-05-04T02:37:00.563Z"}
+{"level":"error","message":"Manual Waste Recording Error: Insufficient quantity to waste","timestamp":"2026-05-04T02:37:00.598Z"}
+{"level":"error","message":"audit.recordInference failed: boom","timestamp":"2026-05-04T02:37:00.605Z"}
+{"level":"error","message":"forecast error: boom","timestamp":"2026-05-04T02:37:04.202Z"}
+{"level":"error","message":"forecast error: Operation `dishes.findOne()` buffering timed out after 10000ms","timestamp":"2026-05-04T02:37:14.237Z"}
+{"level":"error","message":"recipe error: boom","timestamp":"2026-05-04T02:37:14.246Z"}
+{"level":"error","message":"marketBasket error: boom","timestamp":"2026-05-04T02:37:14.251Z"}
+{"level":"error","message":"recommendation.controller error: boom","timestamp":"2026-05-04T02:37:14.260Z"}
+{"level":"error","message":"pricing.controller error: boom","timestamp":"2026-05-04T02:37:14.296Z"}
+{"level":"error","message":"endorsement summary error: boom","timestamp":"2026-05-04T02:37:14.302Z"}
+{"level":"error","message":"Order Creation Error: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-04T02:43:53.201Z"}
+{"level":"error","message":"Error placing customer order: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-04T02:43:53.218Z"}
+{"level":"error","message":"pricing.controller error: Operation `dishes.findOne()` buffering timed out after 10000ms","timestamp":"2026-05-04T02:43:56.166Z"}
+{"level":"error","message":"forecast error: Operation `dishes.findOne()` buffering timed out after 10000ms","timestamp":"2026-05-04T02:43:56.184Z"}
+{"level":"error","message":"forecast error: Operation `dishes.findOne()` buffering timed out after 10000ms","timestamp":"2026-05-04T02:43:56.248Z"}
+{"level":"error","message":"Order Creation Error: orderData.items is not iterable","timestamp":"2026-05-04T02:43:59.477Z"}
+{"level":"error","message":"POS transaction failed: orderData.items is not iterable","timestamp":"2026-05-04T02:43:59.481Z"}
+{"level":"error","message":"Controller Error [processPOSTransaction]: orderData.items is not iterable","timestamp":"2026-05-04T02:43:59.482Z"}
+{"level":"error","message":"Manual Waste Recording Error: Insufficient quantity to waste","timestamp":"2026-05-04T02:43:59.693Z"}
+{"level":"error","message":"Order Creation Error: Dish 69f807ef9193a45e11c252d9 is not available or does not exist.","timestamp":"2026-05-04T02:43:59.929Z"}
+{"level":"error","message":"ETL exportToCSV Error: report.salesTrends.forEach is not a function","timestamp":"2026-05-04T02:43:59.999Z"}
+{"level":"error","message":"Order Creation Error: Dish 69f807f20ff82f5f968bd49b is not available or does not exist.","timestamp":"2026-05-04T02:44:02.173Z"}
+{"level":"error","message":"POS transaction failed: Dish 69f807f20ff82f5f968bd49b is not available or does not exist.","timestamp":"2026-05-04T02:44:02.181Z"}
+{"level":"error","message":"basket.cron: refresh failed code=inference_unavailable","timestamp":"2026-05-04T02:44:03.083Z"}
+{"level":"error","message":"audit.recordInference failed: boom","timestamp":"2026-05-04T02:44:03.086Z"}
+{"level":"error","message":"forecast error: boom","timestamp":"2026-05-04T02:44:06.211Z"}
+{"level":"error","message":"forecast error: Operation `dishes.findOne()` buffering timed out after 10000ms","timestamp":"2026-05-04T02:44:16.240Z"}
+{"level":"error","message":"recipe error: boom","timestamp":"2026-05-04T02:44:16.250Z"}
+{"level":"error","message":"marketBasket error: boom","timestamp":"2026-05-04T02:44:16.255Z"}
+{"level":"error","message":"recommendation.controller error: boom","timestamp":"2026-05-04T02:44:16.265Z"}
+{"level":"error","message":"pricing.controller error: boom","timestamp":"2026-05-04T02:44:16.299Z"}
+{"level":"error","message":"endorsement summary error: boom","timestamp":"2026-05-04T02:44:16.305Z"}
+{"level":"error","message":"Order Creation Error: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-04T02:49:05.085Z"}
+{"level":"error","message":"Error placing customer order: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-04T02:49:05.096Z"}
+{"level":"error","message":"pricing.controller error: Operation `dishes.findOne()` buffering timed out after 10000ms","timestamp":"2026-05-04T02:49:07.832Z"}
+{"level":"error","message":"forecast error: Operation `dishes.findOne()` buffering timed out after 10000ms","timestamp":"2026-05-04T02:49:08.021Z"}
+{"level":"error","message":"forecast error: Operation `dishes.findOne()` buffering timed out after 10000ms","timestamp":"2026-05-04T02:49:08.021Z"}
+{"level":"error","message":"ETL exportToCSV Error: report.salesTrends.forEach is not a function","timestamp":"2026-05-04T02:49:10.052Z"}
+{"level":"error","message":"Order Creation Error: Dish 69f80926d89b9a11a08c623e is not available or does not exist.","timestamp":"2026-05-04T02:49:10.494Z"}
+{"level":"error","message":"POS transaction failed: Dish 69f80926d89b9a11a08c623e is not available or does not exist.","timestamp":"2026-05-04T02:49:10.495Z"}
+{"level":"error","message":"Order Creation Error: Dish 69f80927c937032e8ee68884 is not available or does not exist.","timestamp":"2026-05-04T02:49:11.190Z"}
+{"level":"error","message":"Order Creation Error: orderData.items is not iterable","timestamp":"2026-05-04T02:49:11.463Z"}
+{"level":"error","message":"POS transaction failed: orderData.items is not iterable","timestamp":"2026-05-04T02:49:11.467Z"}
+{"level":"error","message":"Controller Error [processPOSTransaction]: orderData.items is not iterable","timestamp":"2026-05-04T02:49:11.468Z"}
+{"level":"error","message":"Manual Waste Recording Error: Insufficient quantity to waste","timestamp":"2026-05-04T02:49:13.661Z"}
+{"level":"error","message":"audit.recordInference failed: boom","timestamp":"2026-05-04T02:49:14.126Z"}
+{"level":"error","message":"basket.cron: refresh failed code=inference_unavailable","timestamp":"2026-05-04T02:49:14.155Z"}
+{"level":"error","message":"forecast error: boom","timestamp":"2026-05-04T02:49:17.813Z"}
+{"level":"error","message":"forecast error: Operation `dishes.findOne()` buffering timed out after 10000ms","timestamp":"2026-05-04T02:49:27.852Z"}
+{"level":"error","message":"recipe error: boom","timestamp":"2026-05-04T02:49:27.861Z"}
+{"level":"error","message":"marketBasket error: boom","timestamp":"2026-05-04T02:49:27.865Z"}
+{"level":"error","message":"recommendation.controller error: boom","timestamp":"2026-05-04T02:49:27.875Z"}
+{"level":"error","message":"pricing.controller error: boom","timestamp":"2026-05-04T02:49:27.907Z"}
+{"level":"error","message":"endorsement summary error: boom","timestamp":"2026-05-04T02:49:27.912Z"}
+{"level":"error","message":"pricing.controller error: Operation `dishes.findOne()` buffering timed out after 10000ms","timestamp":"2026-05-04T03:05:16.387Z"}
+{"level":"error","message":"Order Creation Error: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-04T03:13:26.660Z"}
+{"level":"error","message":"Error placing customer order: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-04T03:13:26.689Z"}
+{"level":"error","message":"Order Creation Error: Dish 69f80ed9e6b516bfaadeb4a6 is not available or does not exist.","timestamp":"2026-05-04T03:13:29.563Z"}
+{"level":"error","message":"Order Creation Error: orderData.items is not iterable","timestamp":"2026-05-04T03:13:30.061Z"}
+{"level":"error","message":"POS transaction failed: orderData.items is not iterable","timestamp":"2026-05-04T03:13:30.070Z"}
+{"level":"error","message":"Controller Error [processPOSTransaction]: orderData.items is not iterable","timestamp":"2026-05-04T03:13:30.071Z"}
+{"level":"error","message":"ETL exportToCSV Error: report.salesTrends.forEach is not a function","timestamp":"2026-05-04T03:13:30.118Z"}
+{"level":"error","message":"Manual Waste Recording Error: Insufficient quantity to waste","timestamp":"2026-05-04T03:13:31.238Z"}
+{"level":"error","message":"Order Creation Error: Dish 69f80edd08f7271d4b99469f is not available or does not exist.","timestamp":"2026-05-04T03:13:33.386Z"}
+{"level":"error","message":"POS transaction failed: Dish 69f80edd08f7271d4b99469f is not available or does not exist.","timestamp":"2026-05-04T03:13:33.388Z"}
+{"level":"error","message":"basket.cron: refresh failed code=inference_unavailable","timestamp":"2026-05-04T03:13:33.966Z"}
+{"level":"error","message":"audit.recordInference failed: boom","timestamp":"2026-05-04T03:13:33.966Z"}
+{"level":"error","message":"recipe error: boom","timestamp":"2026-05-04T03:14:18.113Z"}
+{"level":"error","message":"marketBasket error: boom","timestamp":"2026-05-04T03:14:18.130Z"}
+{"level":"error","message":"recommendation.controller error: boom","timestamp":"2026-05-04T03:14:18.137Z"}
+{"level":"error","message":"pricing.controller error: boom","timestamp":"2026-05-04T03:14:18.168Z"}
+{"level":"error","message":"endorsement summary error: boom","timestamp":"2026-05-04T03:14:18.175Z"}
+{"level":"error","message":"Order Creation Error: Dish 69f8105bf6b4423d912b6cf8 is not available or does not exist.","timestamp":"2026-05-04T03:19:55.878Z"}
+{"level":"error","message":"Order Creation Error: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-04T03:20:22.150Z"}
+{"level":"error","message":"Error placing customer order: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-04T03:20:22.190Z"}
+{"level":"error","message":"ETL exportToCSV Error: report.salesTrends.forEach is not a function","timestamp":"2026-05-04T03:20:24.032Z"}
+{"level":"error","message":"Order Creation Error: orderData.items is not iterable","timestamp":"2026-05-04T03:20:24.481Z"}
+{"level":"error","message":"POS transaction failed: orderData.items is not iterable","timestamp":"2026-05-04T03:20:24.487Z"}
+{"level":"error","message":"Controller Error [processPOSTransaction]: orderData.items is not iterable","timestamp":"2026-05-04T03:20:24.490Z"}
+{"level":"error","message":"Order Creation Error: Dish 69f810780b8b05af8a69df51 is not available or does not exist.","timestamp":"2026-05-04T03:20:24.642Z"}
+{"level":"error","message":"POS transaction failed: Dish 69f810780b8b05af8a69df51 is not available or does not exist.","timestamp":"2026-05-04T03:20:24.643Z"}
+{"level":"error","message":"Order Creation Error: Dish 69f810790e5b7c2252186dc5 is not available or does not exist.","timestamp":"2026-05-04T03:20:25.635Z"}
+{"level":"error","message":"Manual Waste Recording Error: Insufficient quantity to waste","timestamp":"2026-05-04T03:20:26.734Z"}
+{"level":"error","message":"basket.cron: refresh failed code=inference_unavailable","timestamp":"2026-05-04T03:20:28.319Z"}
+{"level":"error","message":"audit.recordInference failed: boom","timestamp":"2026-05-04T03:20:28.307Z"}
+{"level":"error","message":"recipe error: boom","timestamp":"2026-05-04T03:21:13.009Z"}
+{"level":"error","message":"marketBasket error: boom","timestamp":"2026-05-04T03:21:13.029Z"}
+{"level":"error","message":"recommendation.controller error: boom","timestamp":"2026-05-04T03:21:13.037Z"}
+{"level":"error","message":"pricing.controller error: boom","timestamp":"2026-05-04T03:21:13.067Z"}
+{"level":"error","message":"endorsement summary error: boom","timestamp":"2026-05-04T03:21:13.074Z"}
+{"level":"error","message":"Order Creation Error: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-04T03:22:10.716Z"}
+{"level":"error","message":"Error placing customer order: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-04T03:22:10.773Z"}
+{"level":"error","message":"ETL exportToCSV Error: report.salesTrends.forEach is not a function","timestamp":"2026-05-04T03:22:11.792Z"}
+{"level":"error","message":"Order Creation Error: Dish 69f810e40baa826c43a73a72 is not available or does not exist.","timestamp":"2026-05-04T03:22:12.028Z"}
+{"level":"error","message":"Order Creation Error: orderData.items is not iterable","timestamp":"2026-05-04T03:22:12.281Z"}
+{"level":"error","message":"POS transaction failed: orderData.items is not iterable","timestamp":"2026-05-04T03:22:12.292Z"}
+{"level":"error","message":"Controller Error [processPOSTransaction]: orderData.items is not iterable","timestamp":"2026-05-04T03:22:12.293Z"}
+{"level":"error","message":"Manual Waste Recording Error: Insufficient quantity to waste","timestamp":"2026-05-04T03:22:13.218Z"}
+{"level":"error","message":"Order Creation Error: Dish 69f810e6855fe35340179a28 is not available or does not exist.","timestamp":"2026-05-04T03:22:14.555Z"}
+{"level":"error","message":"POS transaction failed: Dish 69f810e6855fe35340179a28 is not available or does not exist.","timestamp":"2026-05-04T03:22:14.556Z"}
+{"level":"error","message":"basket.cron: refresh failed code=inference_unavailable","timestamp":"2026-05-04T03:22:16.156Z"}
+{"level":"error","message":"audit.recordInference failed: boom","timestamp":"2026-05-04T03:22:16.207Z"}
+{"level":"error","message":"recipe error: boom","timestamp":"2026-05-04T03:23:01.721Z"}
+{"level":"error","message":"marketBasket error: boom","timestamp":"2026-05-04T03:23:01.742Z"}
+{"level":"error","message":"recommendation.controller error: boom","timestamp":"2026-05-04T03:23:01.755Z"}
+{"level":"error","message":"pricing.controller error: boom","timestamp":"2026-05-04T03:23:01.791Z"}
+{"level":"error","message":"endorsement summary error: boom","timestamp":"2026-05-04T03:23:01.800Z"}
+{"level":"error","message":"Order Creation Error: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-04T03:23:19.932Z"}
+{"level":"error","message":"Error placing customer order: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-04T03:23:19.949Z"}
+{"level":"error","message":"Order Creation Error: Dish 69f8112a3462d0b3f3c6fcfb is not available or does not exist.","timestamp":"2026-05-04T03:23:22.231Z"}
+{"level":"error","message":"ETL exportToCSV Error: report.salesTrends.forEach is not a function","timestamp":"2026-05-04T03:23:22.363Z"}
+{"level":"error","message":"Order Creation Error: Dish 69f8112ad5c746545986bc29 is not available or does not exist.","timestamp":"2026-05-04T03:23:22.405Z"}
+{"level":"error","message":"POS transaction failed: Dish 69f8112ad5c746545986bc29 is not available or does not exist.","timestamp":"2026-05-04T03:23:22.406Z"}
+{"level":"error","message":"Order Creation Error: orderData.items is not iterable","timestamp":"2026-05-04T03:23:22.939Z"}
+{"level":"error","message":"POS transaction failed: orderData.items is not iterable","timestamp":"2026-05-04T03:23:22.943Z"}
+{"level":"error","message":"Controller Error [processPOSTransaction]: orderData.items is not iterable","timestamp":"2026-05-04T03:23:22.944Z"}
+{"level":"error","message":"Manual Waste Recording Error: Insufficient quantity to waste","timestamp":"2026-05-04T03:23:23.758Z"}
+{"level":"error","message":"basket.cron: refresh failed code=inference_unavailable","timestamp":"2026-05-04T03:23:24.928Z"}
+{"level":"error","message":"audit.recordInference failed: boom","timestamp":"2026-05-04T03:23:24.964Z"}
+{"level":"error","message":"recipe error: boom","timestamp":"2026-05-04T03:24:11.553Z"}
+{"level":"error","message":"marketBasket error: boom","timestamp":"2026-05-04T03:24:11.573Z"}
+{"level":"error","message":"recommendation.controller error: boom","timestamp":"2026-05-04T03:24:11.582Z"}
+{"level":"error","message":"pricing.controller error: boom","timestamp":"2026-05-04T03:24:11.615Z"}
+{"level":"error","message":"endorsement summary error: boom","timestamp":"2026-05-04T03:24:11.621Z"}
+{"level":"error","message":"forecast error: boom","timestamp":"2026-05-04T12:08:25.682Z"}
+{"level":"error","message":"recipe error: boom","timestamp":"2026-05-04T12:08:25.693Z"}
+{"level":"error","message":"marketBasket error: boom","timestamp":"2026-05-04T12:08:25.697Z"}
+{"level":"error","message":"recommendation.controller error: boom","timestamp":"2026-05-04T12:08:25.704Z"}
+{"level":"error","message":"pricing.controller error: boom","timestamp":"2026-05-04T12:08:25.734Z"}
+{"level":"error","message":"endorsement summary error: boom","timestamp":"2026-05-04T12:08:25.737Z"}
+{"level":"error","message":"Order Creation Error: orderData.items is not iterable","timestamp":"2026-05-04T12:08:58.096Z"}
+{"level":"error","message":"POS transaction failed: orderData.items is not iterable","timestamp":"2026-05-04T12:08:58.100Z"}
+{"level":"error","message":"Controller Error [processPOSTransaction]: orderData.items is not iterable","timestamp":"2026-05-04T12:08:58.100Z"}
+{"level":"error","message":"forecast error: boom","timestamp":"2026-05-04T12:08:59.494Z"}
+{"level":"error","message":"recipe error: boom","timestamp":"2026-05-04T12:08:59.546Z"}
+{"level":"error","message":"marketBasket error: boom","timestamp":"2026-05-04T12:08:59.560Z"}
+{"level":"error","message":"recommendation.controller error: boom","timestamp":"2026-05-04T12:08:59.585Z"}
+{"level":"error","message":"pricing.controller error: boom","timestamp":"2026-05-04T12:08:59.654Z"}
+{"level":"error","message":"endorsement summary error: boom","timestamp":"2026-05-04T12:08:59.664Z"}
+{"level":"error","message":"Order Creation Error: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-04T12:09:00.344Z"}
+{"level":"error","message":"Error placing customer order: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-04T12:09:00.368Z"}
+{"level":"error","message":"Order Creation Error: Dish 69f88c5c9df0de5f3cd58dfa is not available or does not exist.","timestamp":"2026-05-04T12:09:00.636Z"}
+{"level":"error","message":"ETL exportToCSV Error: report.salesTrends.forEach is not a function","timestamp":"2026-05-04T12:09:00.887Z"}
+{"level":"error","message":"Order Creation Error: Dish 69f88c5d8742c536ddbf2654 is not available or does not exist.","timestamp":"2026-05-04T12:09:01.072Z"}
+{"level":"error","message":"POS transaction failed: Dish 69f88c5d8742c536ddbf2654 is not available or does not exist.","timestamp":"2026-05-04T12:09:01.073Z"}
+{"level":"error","message":"Manual Waste Recording Error: Insufficient quantity to waste","timestamp":"2026-05-04T12:09:01.466Z"}
+{"level":"error","message":"basket.cron: refresh failed code=inference_unavailable","timestamp":"2026-05-04T12:09:03.736Z"}
+{"level":"error","message":"audit.recordInference failed: boom","timestamp":"2026-05-04T12:09:03.878Z"}
+{"level":"error","message":"ETL exportToCSV Error: report.salesTrends.forEach is not a function","timestamp":"2026-05-04T12:14:45.131Z"}
+{"level":"error","message":"Order Creation Error: Dish 69f88db74084bea32f76fc98 is not available or does not exist.","timestamp":"2026-05-04T12:14:47.672Z"}
+{"level":"error","message":"POS transaction failed: Dish 69f88db74084bea32f76fc98 is not available or does not exist.","timestamp":"2026-05-04T12:14:47.673Z"}
+{"level":"error","message":"Order Creation Error: Dish 69f88db7bb426b44923ba1cc is not available or does not exist.","timestamp":"2026-05-04T12:14:47.732Z"}
+{"level":"error","message":"Order Creation Error: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-04T12:14:48.084Z"}
+{"level":"error","message":"Error placing customer order: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-04T12:14:48.094Z"}
+{"level":"error","message":"Order Creation Error: orderData.items is not iterable","timestamp":"2026-05-04T12:14:48.738Z"}
+{"level":"error","message":"POS transaction failed: orderData.items is not iterable","timestamp":"2026-05-04T12:14:48.741Z"}
+{"level":"error","message":"Controller Error [processPOSTransaction]: orderData.items is not iterable","timestamp":"2026-05-04T12:14:48.741Z"}
+{"level":"error","message":"Manual Waste Recording Error: Insufficient quantity to waste","timestamp":"2026-05-04T12:14:49.465Z"}
+{"level":"error","message":"forecast error: boom","timestamp":"2026-05-04T12:14:50.139Z"}
+{"level":"error","message":"recipe error: boom","timestamp":"2026-05-04T12:14:50.162Z"}
+{"level":"error","message":"marketBasket error: boom","timestamp":"2026-05-04T12:14:50.199Z"}
+{"level":"error","message":"recommendation.controller error: boom","timestamp":"2026-05-04T12:14:50.228Z"}
+{"level":"error","message":"pricing.controller error: boom","timestamp":"2026-05-04T12:14:50.336Z"}
+{"level":"error","message":"endorsement summary error: boom","timestamp":"2026-05-04T12:14:50.344Z"}
+{"level":"error","message":"audit.recordInference failed: boom","timestamp":"2026-05-04T12:14:50.718Z"}
+{"level":"error","message":"basket.cron: refresh failed code=inference_unavailable","timestamp":"2026-05-04T12:14:50.753Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T12:57:43.839Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T12:57:43.899Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T12:59:50.708Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T12:59:50.753Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:00:52.288Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:00:52.350Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:01:26.244Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:01:27.012Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:02:01.352Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:02:01.432Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:02:31.813Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:02:31.958Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:03:29.889Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:03:29.968Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:13:39.663Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:13:39.703Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:14:42.129Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:14:42.166Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:14:44.170Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:14:44.640Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:14:44.925Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:14:45.150Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:14:45.346Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:14:45.550Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:14:45.743Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:14:45.952Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:14:46.336Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:14:46.617Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:14:46.840Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:14:47.056Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:14:47.280Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:14:47.485Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:14:47.692Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:14:47.889Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:14:48.084Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:15:25.468Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:15:25.508Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:16:46.888Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:16:46.917Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:18:08.229Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:18:08.342Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:19:18.595Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:19:18.643Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:22:26.836Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:22:26.885Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:26:53.119Z"}
+{"level":"error","message":"Dashboard Controller Error: Cannot read properties of undefined (reading 'forecast')","timestamp":"2026-05-04T13:27:54.537Z"}
+{"level":"error","message":"recipe error: OPENAI_API_KEY is required (see Server/.env.example).","timestamp":"2026-05-04T13:30:32.307Z"}
+{"level":"error","message":"Manual Waste Recording Error: Insufficient quantity to waste","timestamp":"2026-05-10T21:25:32.444Z"}
+{"level":"error","message":"Order Creation Error: Dish 6a00f7cc8756a2afc95c4da1 is not available or does not exist.","timestamp":"2026-05-10T21:25:32.493Z"}
+{"level":"error","message":"Order Creation Error: Dish 6a00f7cd47feae95748bb04e is not available or does not exist.","timestamp":"2026-05-10T21:25:33.439Z"}
+{"level":"error","message":"POS transaction failed: Dish 6a00f7cd47feae95748bb04e is not available or does not exist.","timestamp":"2026-05-10T21:25:33.439Z"}
+{"level":"error","message":"audit.recordInference failed: boom","timestamp":"2026-05-10T21:25:38.777Z"}
+{"level":"error","message":"Order Creation Error: orderData.items is not iterable","timestamp":"2026-05-10T21:25:39.760Z"}
+{"level":"error","message":"POS transaction failed: orderData.items is not iterable","timestamp":"2026-05-10T21:25:39.761Z"}
+{"level":"error","message":"Controller Error [processPOSTransaction]: orderData.items is not iterable","timestamp":"2026-05-10T21:25:39.761Z"}
+{"level":"error","message":"ETL exportToCSV Error: report.salesTrends.forEach is not a function","timestamp":"2026-05-10T21:25:41.509Z"}
+{"level":"error","message":"forecast error: boom","timestamp":"2026-05-10T21:25:43.410Z"}
+{"level":"error","message":"recipe error: boom","timestamp":"2026-05-10T21:25:43.422Z"}
+{"level":"error","message":"marketBasket error: boom","timestamp":"2026-05-10T21:25:43.427Z"}
+{"level":"error","message":"recommendation.controller error: boom","timestamp":"2026-05-10T21:25:43.438Z"}
+{"level":"error","message":"pricing.controller error: boom","timestamp":"2026-05-10T21:25:43.486Z"}
+{"level":"error","message":"endorsement summary error: boom","timestamp":"2026-05-10T21:25:43.494Z"}
+{"level":"error","message":"basket.cron: refresh failed code=inference_unavailable","timestamp":"2026-05-10T21:25:44.004Z"}
+{"level":"error","message":"basket.cron: refresh failed code=inference_unavailable","timestamp":"2026-05-11T00:30:00.289Z"}
+{"level":"error","message":"Order Creation Error: Dish 6a01e0dc92599ecf80a732e1 is not available or does not exist.","timestamp":"2026-05-11T13:59:56.011Z"}
+{"level":"error","message":"Manual Waste Recording Error: Insufficient quantity to waste","timestamp":"2026-05-11T13:59:56.053Z"}
+{"level":"error","message":"ETL exportToCSV Error: report.salesTrends.forEach is not a function","timestamp":"2026-05-11T13:59:59.397Z"}
+{"level":"error","message":"Order Creation Error: Dish 6a01e0e054ead7dbe3cdfaf0 is not available or does not exist.","timestamp":"2026-05-11T14:00:00.168Z"}
+{"level":"error","message":"POS transaction failed: Dish 6a01e0e054ead7dbe3cdfaf0 is not available or does not exist.","timestamp":"2026-05-11T14:00:00.169Z"}
+{"level":"error","message":"Order Creation Error: orderData.items is not iterable","timestamp":"2026-05-11T14:00:00.725Z"}
+{"level":"error","message":"POS transaction failed: orderData.items is not iterable","timestamp":"2026-05-11T14:00:00.740Z"}
+{"level":"error","message":"Controller Error [processPOSTransaction]: orderData.items is not iterable","timestamp":"2026-05-11T14:00:00.744Z"}
+{"level":"error","message":"forecast error: boom","timestamp":"2026-05-11T14:00:02.921Z"}
+{"level":"error","message":"recipe error: boom","timestamp":"2026-05-11T14:00:02.940Z"}
+{"level":"error","message":"marketBasket error: boom","timestamp":"2026-05-11T14:00:02.948Z"}
+{"level":"error","message":"recommendation.controller error: boom","timestamp":"2026-05-11T14:00:02.968Z"}
+{"level":"error","message":"pricing.controller error: boom","timestamp":"2026-05-11T14:00:03.088Z"}
+{"level":"error","message":"endorsement summary error: boom","timestamp":"2026-05-11T14:00:03.097Z"}
+{"level":"error","message":"basket.cron: refresh failed code=inference_unavailable","timestamp":"2026-05-11T14:00:03.625Z"}
+{"level":"error","message":"audit.recordInference failed: boom","timestamp":"2026-05-11T14:00:03.741Z"}
+{"level":"error","message":"Order Creation Error: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-11T14:00:05.060Z"}
+{"level":"error","message":"Error placing customer order: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-11T14:00:05.062Z"}
+{"level":"error","message":"recipe error: Operation `generatedrecipes.insertOne()` buffering timed out after 10000ms","timestamp":"2026-05-11T14:00:13.128Z"}
+{"level":"error","message":"Order Creation Error: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-11T14:01:04.011Z"}
+{"level":"error","message":"Error placing customer order: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-11T14:01:04.014Z"}
+{"level":"error","message":"Order Creation Error: orderData.items is not iterable","timestamp":"2026-05-11T14:01:04.503Z"}
+{"level":"error","message":"POS transaction failed: orderData.items is not iterable","timestamp":"2026-05-11T14:01:04.503Z"}
+{"level":"error","message":"Controller Error [processPOSTransaction]: orderData.items is not iterable","timestamp":"2026-05-11T14:01:04.503Z"}
+{"level":"error","message":"recipe error: Operation `generatedrecipes.insertOne()` buffering timed out after 10000ms","timestamp":"2026-05-11T14:01:04.843Z"}
+{"level":"error","message":"Order Creation Error: Dish 6a01e1224f2cb266e430f7cd is not available or does not exist.","timestamp":"2026-05-11T14:01:06.328Z"}
+{"level":"error","message":"Order Creation Error: Dish 6a01e12279e3c0c51951e860 is not available or does not exist.","timestamp":"2026-05-11T14:01:06.404Z"}
+{"level":"error","message":"POS transaction failed: Dish 6a01e12279e3c0c51951e860 is not available or does not exist.","timestamp":"2026-05-11T14:01:06.404Z"}
+{"level":"error","message":"ETL exportToCSV Error: report.salesTrends.forEach is not a function","timestamp":"2026-05-11T14:01:06.725Z"}
+{"level":"error","message":"forecast error: boom","timestamp":"2026-05-11T14:01:08.069Z"}
+{"level":"error","message":"recipe error: boom","timestamp":"2026-05-11T14:01:08.107Z"}
+{"level":"error","message":"marketBasket error: boom","timestamp":"2026-05-11T14:01:08.116Z"}
+{"level":"error","message":"recommendation.controller error: boom","timestamp":"2026-05-11T14:01:08.149Z"}
+{"level":"error","message":"pricing.controller error: boom","timestamp":"2026-05-11T14:01:08.270Z"}
+{"level":"error","message":"endorsement summary error: boom","timestamp":"2026-05-11T14:01:08.285Z"}
+{"level":"error","message":"Manual Waste Recording Error: Insufficient quantity to waste","timestamp":"2026-05-11T14:01:08.599Z"}
+{"level":"error","message":"audit.recordInference failed: boom","timestamp":"2026-05-11T14:01:08.933Z"}
+{"level":"error","message":"basket.cron: refresh failed code=inference_unavailable","timestamp":"2026-05-11T14:01:08.954Z"}
+{"level":"error","message":"recipe error: Operation `generatedrecipes.insertOne()` buffering timed out after 10000ms","timestamp":"2026-05-11T14:01:44.742Z"}
+{"level":"error","message":"Order Creation Error: Dish 6a01e2689d7aec175b8b1c08 is not available or does not exist.","timestamp":"2026-05-11T14:06:32.404Z"}
+{"level":"error","message":"ETL exportToCSV Error: report.salesTrends.forEach is not a function","timestamp":"2026-05-11T14:06:32.437Z"}
+{"level":"error","message":"Order Creation Error: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-11T14:06:32.750Z"}
+{"level":"error","message":"Error placing customer order: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-11T14:06:32.753Z"}
+{"level":"error","message":"Manual Waste Recording Error: Insufficient quantity to waste","timestamp":"2026-05-11T14:06:33.769Z"}
+{"level":"error","message":"Order Creation Error: orderData.items is not iterable","timestamp":"2026-05-11T14:06:33.821Z"}
+{"level":"error","message":"POS transaction failed: orderData.items is not iterable","timestamp":"2026-05-11T14:06:33.822Z"}
+{"level":"error","message":"Controller Error [processPOSTransaction]: orderData.items is not iterable","timestamp":"2026-05-11T14:06:33.823Z"}
+{"level":"error","message":"Order Creation Error: Dish 6a01e26bfefc5d5462d06446 is not available or does not exist.","timestamp":"2026-05-11T14:06:35.119Z"}
+{"level":"error","message":"POS transaction failed: Dish 6a01e26bfefc5d5462d06446 is not available or does not exist.","timestamp":"2026-05-11T14:06:35.120Z"}
+{"level":"error","message":"forecast error: boom","timestamp":"2026-05-11T14:06:36.276Z"}
+{"level":"error","message":"recipe error: boom","timestamp":"2026-05-11T14:06:36.300Z"}
+{"level":"error","message":"marketBasket error: boom","timestamp":"2026-05-11T14:06:36.322Z"}
+{"level":"error","message":"recommendation.controller error: boom","timestamp":"2026-05-11T14:06:36.337Z"}
+{"level":"error","message":"pricing.controller error: boom","timestamp":"2026-05-11T14:06:36.438Z"}
+{"level":"error","message":"endorsement summary error: boom","timestamp":"2026-05-11T14:06:36.447Z"}
+{"level":"error","message":"basket.cron: refresh failed code=inference_unavailable","timestamp":"2026-05-11T14:06:36.564Z"}
+{"level":"error","message":"audit.recordInference failed: boom","timestamp":"2026-05-11T14:06:36.589Z"}
+{"level":"error","message":"Order Creation Error: Dish 6a01e55670115fa8f465f216 is not available or does not exist.","timestamp":"2026-05-11T14:19:02.251Z"}
+{"level":"error","message":"Order Creation Error: Dish 6a01e55604a19b800d861f24 is not available or does not exist.","timestamp":"2026-05-11T14:19:02.383Z"}
+{"level":"error","message":"POS transaction failed: Dish 6a01e55604a19b800d861f24 is not available or does not exist.","timestamp":"2026-05-11T14:19:02.384Z"}
+{"level":"error","message":"Order Creation Error: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-11T14:19:07.517Z"}
+{"level":"error","message":"Error placing customer order: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-11T14:19:07.532Z"}
+{"level":"error","message":"Order Creation Error: Dish 6a01e61f4430429b321f47b3 is not available or does not exist.","timestamp":"2026-05-11T14:22:23.927Z"}
+{"level":"error","message":"Order Creation Error: Dish 6a01e621fb4e8d00f8c537ac is not available or does not exist.","timestamp":"2026-05-11T14:22:25.386Z"}
+{"level":"error","message":"POS transaction failed: Dish 6a01e621fb4e8d00f8c537ac is not available or does not exist.","timestamp":"2026-05-11T14:22:25.386Z"}
+{"level":"error","message":"Order Creation Error: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-11T14:22:27.324Z"}
+{"level":"error","message":"Error placing customer order: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-11T14:22:27.327Z"}
+{"level":"error","message":"ETL exportToCSV Error: report.salesTrends.forEach is not a function","timestamp":"2026-05-11T14:22:28.575Z"}
+{"level":"error","message":"Order Creation Error: orderData.items is not iterable","timestamp":"2026-05-11T14:22:28.676Z"}
+{"level":"error","message":"POS transaction failed: orderData.items is not iterable","timestamp":"2026-05-11T14:22:28.676Z"}
+{"level":"error","message":"Controller Error [processPOSTransaction]: orderData.items is not iterable","timestamp":"2026-05-11T14:22:28.676Z"}
+{"level":"error","message":"Manual Waste Recording Error: Insufficient quantity to waste","timestamp":"2026-05-11T14:22:30.445Z"}
+{"level":"error","message":"forecast error: boom","timestamp":"2026-05-11T14:22:30.922Z"}
+{"level":"error","message":"recipe error: boom","timestamp":"2026-05-11T14:22:30.981Z"}
+{"level":"error","message":"marketBasket error: boom","timestamp":"2026-05-11T14:22:30.994Z"}
+{"level":"error","message":"recommendation.controller error: boom","timestamp":"2026-05-11T14:22:31.008Z"}
+{"level":"error","message":"pricing.controller error: boom","timestamp":"2026-05-11T14:22:31.189Z"}
+{"level":"error","message":"endorsement summary error: boom","timestamp":"2026-05-11T14:22:31.198Z"}
+{"level":"error","message":"basket.cron: refresh failed code=inference_unavailable","timestamp":"2026-05-11T14:22:31.642Z"}
+{"level":"error","message":"audit.recordInference failed: boom","timestamp":"2026-05-11T14:22:31.624Z"}
+{"level":"error","message":"Order Status Update Error: Order not found","timestamp":"2026-05-11T14:24:35.658Z"}
+{"level":"error","message":"Order Status Update Error: Order not found","timestamp":"2026-05-11T14:24:39.551Z"}
+{"level":"error","message":"Controller Error [updateOrderStatus]: Order not found","timestamp":"2026-05-11T14:24:39.558Z"}
+{"level":"error","message":"Order Creation Error: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-11T14:25:47.107Z"}
+{"level":"error","message":"Error placing customer order: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-11T14:25:47.110Z"}
+{"level":"error","message":"ETL exportToCSV Error: report.salesTrends.forEach is not a function","timestamp":"2026-05-11T14:25:47.743Z"}
+{"level":"error","message":"Order Status Update Error: Order not found","timestamp":"2026-05-11T14:25:47.985Z"}
+{"level":"error","message":"Order Creation Error: orderData.items is not iterable","timestamp":"2026-05-11T14:25:48.300Z"}
+{"level":"error","message":"POS transaction failed: orderData.items is not iterable","timestamp":"2026-05-11T14:25:48.301Z"}
+{"level":"error","message":"Controller Error [processPOSTransaction]: orderData.items is not iterable","timestamp":"2026-05-11T14:25:48.301Z"}
+{"level":"error","message":"Order Creation Error: Dish 6a01e6ec8e54323835be23f9 is not available or does not exist.","timestamp":"2026-05-11T14:25:48.605Z"}
+{"level":"error","message":"Order Status Update Error: Order not found","timestamp":"2026-05-11T14:25:48.616Z"}
+{"level":"error","message":"Controller Error [updateOrderStatus]: Order not found","timestamp":"2026-05-11T14:25:48.619Z"}
+{"level":"error","message":"Manual Waste Recording Error: Insufficient quantity to waste","timestamp":"2026-05-11T14:25:48.705Z"}
+{"level":"error","message":"Order Creation Error: Dish 6a01e6ec3836ca0451074452 is not available or does not exist.","timestamp":"2026-05-11T14:25:48.822Z"}
+{"level":"error","message":"POS transaction failed: Dish 6a01e6ec3836ca0451074452 is not available or does not exist.","timestamp":"2026-05-11T14:25:48.822Z"}
+{"level":"error","message":"forecast error: boom","timestamp":"2026-05-11T14:25:51.424Z"}
+{"level":"error","message":"recipe error: boom","timestamp":"2026-05-11T14:25:51.455Z"}
+{"level":"error","message":"marketBasket error: boom","timestamp":"2026-05-11T14:25:51.466Z"}
+{"level":"error","message":"recommendation.controller error: boom","timestamp":"2026-05-11T14:25:51.497Z"}
+{"level":"error","message":"pricing.controller error: boom","timestamp":"2026-05-11T14:25:51.593Z"}
+{"level":"error","message":"endorsement summary error: boom","timestamp":"2026-05-11T14:25:51.602Z"}
+{"level":"error","message":"audit.recordInference failed: boom","timestamp":"2026-05-11T14:25:52.155Z"}
+{"level":"error","message":"basket.cron: refresh failed code=inference_unavailable","timestamp":"2026-05-11T14:25:52.167Z"}
+{"level":"error","message":"Order Creation Error: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-11T15:07:14.441Z"}
+{"level":"error","message":"Error placing customer order: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-11T15:07:14.449Z"}
+{"level":"error","message":"Order Creation Error: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-11T15:10:17.073Z"}
+{"level":"error","message":"Error placing customer order: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-11T15:10:17.161Z"}
+{"level":"error","message":"Order Status Update Error: Order not found","timestamp":"2026-05-11T15:12:34.938Z"}
+{"level":"error","message":"Controller Error [updateOrderStatus]: Order not found","timestamp":"2026-05-11T15:12:34.940Z"}
+{"level":"error","message":"Order Creation Error: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-11T15:12:36.720Z"}
+{"level":"error","message":"Error placing customer order: Dish aaaaaaaaaaaaaaaaaaaaaaaa is not available or does not exist.","timestamp":"2026-05-11T15:12:36.724Z"}
+{"level":"error","message":"ETL exportToCSV Error: report.salesTrends.forEach is not a function","timestamp":"2026-05-11T15:12:37.494Z"}
+{"level":"error","message":"Order Creation Error: orderData.items is not iterable","timestamp":"2026-05-11T15:12:38.231Z"}
+{"level":"error","message":"POS transaction failed: orderData.items is not iterable","timestamp":"2026-05-11T15:12:38.232Z"}
+{"level":"error","message":"Controller Error [processPOSTransaction]: orderData.items is not iterable","timestamp":"2026-05-11T15:12:38.232Z"}
+{"level":"error","message":"Order Creation Error: Dish 6a01f1e693ea27f86a25b366 is not available or does not exist.","timestamp":"2026-05-11T15:12:38.452Z"}
+{"level":"error","message":"Order Creation Error: Dish 6a01f1e8cf8f26032faf9ec5 is not available or does not exist.","timestamp":"2026-05-11T15:12:40.016Z"}
+{"level":"error","message":"POS transaction failed: Dish 6a01f1e8cf8f26032faf9ec5 is not available or does not exist.","timestamp":"2026-05-11T15:12:40.017Z"}
+{"level":"error","message":"Order Status Update Error: Order not found","timestamp":"2026-05-11T15:12:40.130Z"}
+{"level":"error","message":"forecast error: boom","timestamp":"2026-05-11T15:12:40.834Z"}
+{"level":"error","message":"recipe error: boom","timestamp":"2026-05-11T15:12:40.862Z"}
+{"level":"error","message":"marketBasket error: boom","timestamp":"2026-05-11T15:12:40.883Z"}
+{"level":"error","message":"recommendation.controller error: boom","timestamp":"2026-05-11T15:12:40.903Z"}
+{"level":"error","message":"pricing.controller error: boom","timestamp":"2026-05-11T15:12:40.987Z"}
+{"level":"error","message":"endorsement summary error: boom","timestamp":"2026-05-11T15:12:40.994Z"}
+{"level":"error","message":"Manual Waste Recording Error: Insufficient quantity to waste","timestamp":"2026-05-11T15:12:41.622Z"}
+{"level":"error","message":"basket.cron: refresh failed code=inference_unavailable","timestamp":"2026-05-11T15:12:41.967Z"}
+{"level":"error","message":"audit.recordInference failed: boom","timestamp":"2026-05-11T15:12:41.923Z"}
+{"level":"error","message":"Auth Middleware Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-05-11T20:53:43.674Z"}
+{"level":"error","message":"Auth Middleware Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-05-11T21:02:55.079Z"}
+{"level":"error","message":"Auth Middleware Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-05-11T21:03:03.363Z"}
+{"level":"error","message":"Auth Middleware Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-05-11T21:03:33.363Z"}
+{"level":"error","message":"Auth Middleware Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-05-11T21:04:03.374Z"}
+{"level":"error","message":"Auth Middleware Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-05-11T21:04:33.370Z"}
+{"level":"error","message":"Auth Middleware Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-05-11T21:05:03.372Z"}
+{"level":"error","message":"Auth Middleware Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-05-11T21:05:33.375Z"}
+{"level":"error","message":"Auth Middleware Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-05-11T21:06:03.366Z"}
+{"level":"error","message":"Auth Middleware Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-05-11T21:06:33.364Z"}
+{"level":"error","message":"Auth Middleware Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-05-11T21:07:03.376Z"}
+{"level":"error","message":"Auth Middleware Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-05-11T21:07:33.373Z"}
+{"level":"error","message":"Auth Middleware Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-05-11T21:08:03.363Z"}
+{"level":"error","message":"Auth Middleware Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-05-11T21:08:33.364Z"}
+{"level":"error","message":"Auth Middleware Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-05-11T21:09:03.363Z"}
+{"level":"error","message":"Auth Middleware Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-05-11T21:09:33.371Z"}
+{"level":"error","message":"Auth Middleware Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-05-11T21:10:03.366Z"}
+{"level":"error","message":"Auth Middleware Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-05-11T21:10:33.370Z"}
+{"level":"error","message":"Auth Middleware Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-05-11T21:11:03.367Z"}
+{"level":"error","message":"Auth Middleware Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-05-11T21:11:33.370Z"}
+{"level":"error","message":"Auth Middleware Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-05-11T21:12:03.371Z"}
+{"level":"error","message":"Auth Middleware Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-05-11T21:12:33.375Z"}
+{"level":"error","message":"Auth Middleware Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-05-11T21:13:03.372Z"}
+{"level":"error","message":"Auth Middleware Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-05-11T21:19:45.505Z"}
+{"level":"error","message":"Auth Middleware Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-05-11T21:20:41.809Z"}
+{"level":"error","message":"Auth Middleware Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-05-11T21:21:11.809Z"}
+{"level":"error","message":"basket.cron: refresh failed code=inference_unavailable","timestamp":"2026-05-12T00:30:01.274Z"}
+{"level":"error","message":"audit.recordInference failed: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-05-12T00:30:06.354Z"}
+{"level":"error","message":"Auth Middleware Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-05-12T03:38:43.663Z"}
+{"level":"error","message":"Auth Middleware Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-05-12T03:39:13.568Z"}
+{"level":"error","message":"Auth Middleware Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-05-12T03:39:35.784Z"}
+{"level":"error","message":"Auth Middleware Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-05-12T03:39:35.864Z"}
+{"level":"error","message":"Auth Middleware Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-05-12T03:39:41.008Z"}
+{"level":"error","message":"Auth Middleware Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-05-12T03:40:05.742Z"}
+{"level":"error","message":"Auth Middleware Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-05-12T12:36:46.253Z"}
+{"level":"error","message":"Auth Middleware Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-05-12T12:36:51.883Z"}
+{"level":"error","message":"Auth Middleware Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-05-12T12:36:51.885Z"}
+{"level":"error","message":"Auth Middleware Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-05-12T12:36:56.905Z"}
+{"level":"error","message":"Auth Middleware Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-05-12T12:37:00.064Z"}
+{"level":"error","message":"Auth Middleware Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-05-12T12:37:00.069Z"}
+{"level":"error","message":"Auth Middleware Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-05-12T12:37:05.075Z"}
+{"level":"error","message":"MongoDB Connection Error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017","timestamp":"2026-06-07T14:00:44.975Z"}
+{"level":"error","message":"pricing-alert.cron: failed code=inference_unavailable","timestamp":"2026-06-07T15:45:37.322Z"}
+{"level":"error","message":"basket.cron: refresh failed code=inference_unavailable","timestamp":"2026-06-07T15:53:21.899Z"}
+{"level":"error","message":"pricing-alert.cron: failed code=inference_unavailable","timestamp":"2026-06-07T15:53:25.337Z"}
+{"level":"error","message":"pricing-alert.cron: failed code=inference_unavailable","timestamp":"2026-06-07T18:31:25.057Z"}
+{"level":"error","message":"pricing-alert.cron: failed code=inference_unavailable","timestamp":"2026-06-09T11:06:25.832Z"}

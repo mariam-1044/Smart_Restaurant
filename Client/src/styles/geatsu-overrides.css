@@ -1,0 +1,523 @@
+/* ============================================================
+ * Gusteau — Selective overrides for legacy class names.
+ *
+ * The existing layout.css / dashboard.css already reference
+ * --bg-card / --text-primary / --border-color which now resolve
+ * to Gusteau tokens. This file rebrands the *hard-coded* colours
+ * (legacy reds / golds / navy / orange) onto the green AI-dining
+ * palette and lifts navigation surfaces into the new aesthetic.
+ *
+ * Class names are kept identical — only colours/typography change —
+ * so no JSX or component logic needs to change.
+ * ============================================================ */
+
+/* --- Sidebar (deep forest control panel) --- */
+.sidebar {
+  background:
+    radial-gradient(1200px 600px at -10% -20%, rgba(155,226,45,0.10), transparent 60%),
+    radial-gradient(800px 400px at 110% 110%, rgba(31,122,63,0.18), transparent 60%),
+    var(--brand-forest) !important;
+  color: #EAF5EC;
+  border-right: 1px solid rgba(255,255,255,0.07);
+  font-family: var(--font-heading) !important;
+  font-style: normal !important;
+}
+
+.smart-logo {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  background: linear-gradient(120deg, #FFFFFF 0%, var(--accent-lime) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu-item {
+  color: rgba(234, 245, 236, 0.80) !important;
+  border-radius: 12px !important;
+  padding-left: 14px;
+  padding-right: 14px;
+  margin-right: 14px;
+  font-style: normal !important;
+  transition: background-color 220ms var(--ease-out-expo), color 220ms var(--ease-out-expo), transform 220ms var(--ease-out-expo) !important;
+}
+.menu-item:hover {
+  background-color: rgba(255,255,255,0.07) !important;
+  color: #fff !important;
+  transform: translateX(2px) !important;
+}
+.menu-item.active,
+.active {
+  background: linear-gradient(135deg, rgba(31,122,63,0.45), rgba(155,226,45,0.10)) !important;
+  color: #fff !important;
+  border: 1px solid rgba(155,226,45,0.35);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.05), 0 4px 18px rgba(11,61,46,0.35);
+}
+.active::before {
+  background: var(--accent-lime) !important;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Logout stays a distinct "danger" affordance so it never reads as a
+   primary green action. */
+.logout-btn {
+  background: rgba(220, 38, 38, 0.14) !important;
+  color: #FCA5A5 !important;
+  border: 1px solid rgba(220, 38, 38, 0.30) !important;
+  border-radius: 12px !important;
+  font-family: var(--font-heading) !important;
+  font-style: normal !important;
+  letter-spacing: 0.04em;
+  margin-top: auto !important;
+  margin: 24px 14px !important;
+}
+.logout-btn:hover {
+  background: #DC2626 !important;
+  color: #fff !important;
+  box-shadow: 0 0 18px rgba(220, 38, 38, 0.35);
+}
+
+/* --- Top Navbar (sticky, glass) --- */
+.navbar {
+  background: rgba(13, 31, 23, 0.55) !important;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--border-color) !important;
+  box-shadow: none !important;
+  font-family: var(--font-heading) !important;
+}
+[data-theme="light"] .navbar {
+  background: rgba(255, 255, 255, 0.72) !important;
+}
+:root:not([data-theme="dark"]):not([data-theme="light"]) .navbar {
+  /* default :root is already Gusteau light if no theme set */
+  background: rgba(255, 255, 255, 0.72) !important;
+}
+[data-theme="dark"] .navbar {
+  background: rgba(13, 31, 23, 0.55) !important;
+}
+
+.nav-title {
+  font-family: var(--font-heading) !important;
+  letter-spacing: -0.01em;
+  font-weight: 700 !important;
+}
+
+.nav-btn {
+  background: var(--accent-active) !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 10px !important;
+  padding: 8px 14px !important;
+  font-family: var(--font-heading) !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.02em;
+  transition: transform 200ms var(--ease-out-expo), box-shadow 200ms var(--ease-out-expo), background-color 200ms var(--ease-out-expo) !important;
+}
+.nav-btn:hover {
+  background: #176A35 !important;
+  transform: translateY(-1px) scale(1.02);
+  box-shadow: var(--glow-green);
+}
+.nav-btn:disabled { opacity: 0.55; cursor: not-allowed; transform: none; box-shadow: none; }
+
+.search-input {
+  background: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 999px !important;
+  box-shadow: none !important;
+  transition: border-color 160ms var(--ease-out-expo), box-shadow 160ms var(--ease-out-expo) !important;
+}
+.search-input:focus {
+  border-color: var(--accent-active) !important;
+  box-shadow: 0 0 0 3px rgba(155, 226, 45, 0.30) !important;
+}
+
+.profile-icon { color: var(--accent-active) !important; }
+.profile-dropdown {
+  background: var(--bg-secondary) !important;
+  border: 1px solid var(--border-color) !important;
+  box-shadow: var(--shadow-elev) !important;
+  border-radius: 12px !important;
+}
+
+/* --- Cards & tables — soft Gusteau surfaces --- */
+.stat-card.dark-green { background: linear-gradient(135deg, #0B3D2E, #134E3A) !important; }
+.stat-card.light-green1 { background: linear-gradient(135deg, #1F7A3F, #2F9B57) !important; }
+.stat-card.orange-card { background: linear-gradient(135deg, #2D6A4F, #52B788) !important; }
+
+.chart-container, .top-dishes,
+.main-chart-card, .table-card,
+.report-table-card, .summary-item,
+.recipe-card-large, .recommendation-card,
+.recommend-card, .settings-card,
+.inventory-card, .inventory-table-card,
+.alert-box, .alert-card {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: var(--radius-lg) !important;
+  box-shadow: var(--shadow-soft) !important;
+  color: var(--text-primary);
+}
+[data-theme="dark"] .chart-container,
+[data-theme="dark"] .top-dishes,
+[data-theme="dark"] .main-chart-card,
+[data-theme="dark"] .table-card,
+[data-theme="dark"] .report-table-card,
+[data-theme="dark"] .summary-item,
+[data-theme="dark"] .recipe-card-large,
+[data-theme="dark"] .recommendation-card,
+[data-theme="dark"] .recommend-card,
+[data-theme="dark"] .settings-card,
+[data-theme="dark"] .inventory-card,
+[data-theme="dark"] .inventory-table-card,
+[data-theme="dark"] .alert-box,
+[data-theme="dark"] .alert-card {
+  background: rgba(255,255,255,0.04) !important;
+  backdrop-filter: blur(12px);
+}
+
+/* Recipe page legacy backdrop */
+.recipes-page-wrapper { background: transparent !important; }
+
+/* --- Buttons used by legacy pages --- */
+.btn-primary, .btn-save, .submit-order-btn, .btn-confirm-order,
+.btn-publish, .btn-secondary-large, .btn-personalized {
+  background: var(--accent-active) !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 12px !important;
+  font-family: var(--font-heading) !important;
+  letter-spacing: 0.02em !important;
+  transition: transform 200ms var(--ease-out-expo), box-shadow 200ms var(--ease-out-expo), background-color 200ms var(--ease-out-expo) !important;
+}
+.btn-primary:hover, .btn-save:hover, .submit-order-btn:hover, .btn-confirm-order:hover,
+.btn-publish:hover, .btn-secondary-large:hover, .btn-personalized:hover {
+  background: #176A35 !important;
+  transform: translateY(-1px) scale(1.01);
+  box-shadow: var(--glow-green) !important;
+}
+/* "Publish" = positive AI action → lime-forward highlight */
+.btn-publish { background: linear-gradient(120deg, #1F7A3F, var(--accent-lime)) !important; color: #08240F !important; }
+.btn-publish:hover { background: linear-gradient(120deg, #176A35, #B6F24A) !important; box-shadow: var(--glow-lime) !important; }
+.btn-personalized { background: linear-gradient(120deg, var(--brand-forest), var(--accent-active)) !important; }
+.btn-delete { background: rgba(220,38,38,0.14) !important; color: var(--status-danger-fg) !important; border: 1px solid rgba(220,38,38,0.32) !important; }
+.btn-delete:hover { background: #DC2626 !important; color: #fff !important; }
+
+.btn-outline {
+  background: transparent !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 12px !important;
+}
+.btn-outline:hover { border-color: var(--accent-active) !important; color: var(--accent-active) !important; background: transparent !important; }
+
+/* --- Status pills (kept readable + distinct) --- */
+.status-badge.status-ok, .status-pill.success, .status-tag.completed, .status-btn.ok {
+  background: var(--status-success-bg) !important;
+  color: var(--status-success-fg) !important;
+  border: 1px solid rgba(16,185,129,0.32);
+}
+.status-badge.status-low, .status-pill.warning, .status-btn.warn, .status-btn.low-stock {
+  background: var(--status-warn-bg) !important;
+  color: var(--status-warn-fg) !important;
+  border: 1px solid rgba(245,158,11,0.32);
+}
+.status-badge.status-out, .status-pill.danger, .status-tag.refunded {
+  background: var(--status-danger-bg) !important;
+  color: var(--status-danger-fg) !important;
+  border: 1px solid rgba(220,38,38,0.32);
+}
+
+/* Recipe history badges */
+.status-draft  { background: var(--status-warn-bg) !important; color: var(--status-warn-fg) !important; }
+.status-published { background: var(--status-success-bg) !important; color: var(--status-success-fg) !important; }
+
+/* --- Input focus globally aligned to lime ring --- */
+.form-group input:focus,
+.form-group select:focus,
+.form-input:focus, .form-select:focus,
+input.search-input:focus {
+  border-color: var(--accent-active) !important;
+  box-shadow: 0 0 0 3px rgba(155,226,45,0.28) !important;
+}
+
+/* Ordering system — premium forest look */
+.side-navigation {
+  background:
+    radial-gradient(900px 500px at -10% -10%, rgba(155,226,45,0.10), transparent 60%),
+    linear-gradient(rgba(7,19,14,0.92), rgba(11,61,46,0.92)),
+    var(--brand-forest) !important;
+  border-right: 1px solid rgba(255,255,255,0.07) !important;
+  font-family: var(--font-heading) !important;
+}
+.brand-box { font-family: var(--font-heading) !important; letter-spacing: 0.04em; }
+.brand-box span { color: var(--accent-lime) !important; }
+.cat-link {
+  color: rgba(234,245,236,0.72) !important;
+  font-family: var(--font-heading) !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+  border-radius: 999px !important;
+  padding: 12px 18px !important;
+  margin-bottom: 6px !important;
+  border: 1px solid transparent !important;
+  transition: all 220ms var(--ease-out-expo) !important;
+}
+.cat-link:hover {
+  background: rgba(255,255,255,0.07) !important;
+  color: #fff !important;
+  padding-left: 22px !important;
+}
+.cat-link.active {
+  background: rgba(31,122,63,0.30) !important;
+  color: #fff !important;
+  border: 1px solid rgba(155,226,45,0.40) !important;
+  box-shadow: 0 0 0 3px rgba(155,226,45,0.15);
+}
+
+.top-navbar {
+  background: rgba(13,31,23,0.55) !important;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--border-color) !important;
+  color: var(--text-primary);
+}
+.top-navbar .nav-title { color: var(--text-primary) !important; }
+.top-navbar .nav-search input {
+  background: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 999px !important;
+}
+.user-profile { color: var(--text-secondary) !important; }
+.items-display { background: transparent !important; }
+.items-display h3 {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  letter-spacing: -0.01em;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+
+.food-item-card {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: var(--radius-lg) !important;
+  box-shadow: var(--shadow-soft) !important;
+  overflow: hidden !important;
+  transition: transform 240ms var(--ease-out-expo), box-shadow 240ms var(--ease-out-expo), border-color 240ms var(--ease-out-expo) !important;
+}
+.food-item-card:hover {
+  transform: translateY(-4px) scale(1.01) !important;
+  border-color: rgba(155,226,45,0.45) !important;
+  box-shadow: var(--shadow-elev) !important;
+}
+.food-item-card img { height: 170px !important; }
+.food-item-info h4 {
+  font-family: var(--font-heading);
+  color: var(--text-primary) !important;
+  font-size: 17px !important;
+  letter-spacing: -0.01em;
+}
+.price-action span {
+  font-family: var(--font-heading) !important;
+  color: var(--accent-active) !important;
+  font-size: 18px !important;
+}
+.price-action button {
+  background: var(--accent-active) !important;
+  color: #fff !important;
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 12px !important;
+  font-size: 18px !important;
+  transition: all 200ms var(--ease-out-expo);
+}
+.price-action button:hover {
+  box-shadow: var(--glow-green);
+  transform: translateY(-1px);
+}
+
+.checkout-panel {
+  background: var(--bg-secondary) !important;
+  border-left: 1px solid var(--border-color) !important;
+}
+.cart-header {
+  font-family: var(--font-heading) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+  color: var(--text-primary) !important;
+}
+.cart-item-row { border-bottom: 1px dashed var(--border-color) !important; }
+.item-name { color: var(--text-primary); font-weight: 600; }
+.item-price { color: var(--accent-active); font-family: var(--font-heading); }
+.item-controls button {
+  background: var(--bg-elevated) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-primary) !important;
+  border-radius: 8px !important;
+  width: 28px; height: 28px;
+  cursor: pointer;
+}
+.cart-summary {
+  background: var(--bg-elevated) !important;
+  border-top: 1px solid var(--border-color) !important;
+}
+
+.modal-container, .success-card {
+  background: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-elev);
+}
+.success-icon {
+  background: linear-gradient(135deg, var(--accent-active), var(--accent-lime)) !important;
+  box-shadow: 0 10px 28px rgba(31,122,63,0.30) !important;
+}
+.input-group input {
+  background: var(--bg-elevated) !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-primary) !important;
+}
+.input-group input:focus {
+  border-color: var(--accent-active) !important;
+  box-shadow: 0 0 0 4px rgba(155,226,45,0.18) !important;
+}
+
+/* Auth pages — forest green hero */
+.auth-container {
+  background:
+    radial-gradient(900px 600px at 80% -10%, rgba(31,122,63,0.35), transparent 55%),
+    radial-gradient(700px 500px at 0% 110%, rgba(155,226,45,0.16), transparent 55%),
+    var(--brand-forest) !important;
+  font-family: var(--font-body) !important;
+}
+.site-title {
+  font-family: var(--font-heading) !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.04em !important;
+  color: #fff !important;
+  text-shadow: 0 2px 18px rgba(155,226,45,0.30) !important;
+}
+.auth-box {
+  background: rgba(255,255,255,0.05) !important;
+  border: 1px solid rgba(255,255,255,0.10) !important;
+  backdrop-filter: blur(18px) !important;
+  -webkit-backdrop-filter: blur(18px) !important;
+  border-radius: 24px !important;
+  box-shadow: 0 24px 60px rgba(0,0,0,0.45) !important;
+  color: #EAF5EC;
+}
+.login-title {
+  color: var(--accent-lime) !important;
+  font-family: var(--font-heading) !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase;
+}
+.auth-box input {
+  background: rgba(255,255,255,0.07) !important;
+  color: #EAF5EC !important;
+  border: 1px solid rgba(255,255,255,0.12) !important;
+}
+.auth-box input::placeholder { color: rgba(234,245,236,0.5) !important; }
+.auth-box input:focus {
+  border-color: var(--accent-lime) !important;
+  background: rgba(255,255,255,0.12) !important;
+  box-shadow: 0 0 0 3px rgba(155,226,45,0.25) !important;
+}
+.auth-box button {
+  background: var(--accent-active) !important;
+  font-family: var(--font-heading) !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase;
+}
+.auth-box button:hover { box-shadow: var(--glow-green) !important; background: #176A35 !important; }
+.login-footer { color: rgba(234,245,236,0.65) !important; }
+.login-footer a { color: var(--accent-lime) !important; }
+
+/* Inventory table polish */
+.inventory-table th {
+  background: var(--bg-elevated) !important;
+  color: var(--text-secondary) !important;
+  font-family: var(--font-heading);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 11px !important;
+}
+.inventory-table tbody tr:hover {
+  background: var(--bg-elevated) !important;
+}
+
+/* Table look-and-feel for menu management */
+table { color: var(--text-primary); }
+table.bg-white { background: var(--bg-card) !important; border: 1px solid var(--border-color); border-radius: var(--radius-lg); overflow: hidden; }
+
+/* Generic .modal-overlay backdrop — fixed + centered so modals always appear in
+   the middle of the viewport (never below the fold needing a scroll), regardless
+   of which page renders them or how far the page is scrolled. */
+.modal-overlay {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 1000 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 20px !important;
+  background: rgba(5, 14, 10, 0.65) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+}
+.modal-content {
+  background: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: var(--radius-lg) !important;
+  box-shadow: var(--shadow-elev) !important;
+  /* Tall modals scroll inside themselves instead of pushing the page. */
+  max-height: 90vh !important;
+  overflow-y: auto !important;
+}
+.close-btn { color: var(--text-muted) !important; }
+
+/* Recipes page polish — preserve existing structure but soften surfaces */
+.recipe-card-large { background: var(--bg-card) !important; }
+.rg-config { background: rgba(31,122,63,0.04) !important; border-color: var(--border-color) !important; }
+.rg-card { background: rgba(16,32,24,0.04) !important; border: 1px solid var(--border-color) !important; }
+[data-theme="dark"] .rg-card { background: rgba(255,255,255,0.04) !important; }
+.rg-checklist { background: var(--bg-secondary) !important; border-color: var(--border-color) !important; }
+.rg-check-name { color: var(--text-primary) !important; }
+.history-item { background: transparent !important; border-color: var(--border-color) !important; }
+.history-item.active {
+  background: linear-gradient(135deg, rgba(31,122,63,0.20), rgba(155,226,45,0.10)) !important;
+  border-color: rgba(155,226,45,0.40) !important;
+}
+.recipe-history { background: var(--bg-secondary) !important; border: 1px solid var(--border-color); }
+
+/* Headlines on Settings page */
+.settings-header { font-family: var(--font-heading); letter-spacing: -0.01em; }
+.card-title { font-family: var(--font-heading); }
+.card-icon { color: var(--accent-active) !important; }
+
+/* No-alerts and dashboard error */
+.no-alerts {
+  background: rgba(31,122,63,0.04) !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-secondary) !important;
+}
+
+/* --- Responsive — POS / Dashboard collapse cleanly on mobile --- */
+@media (max-width: 900px) {
+  .top-navbar { grid-template-columns: 1fr !important; gap: 8px; height: auto !important; padding: 14px 16px !important; }
+  .side-navigation { width: 100% !important; height: auto !important; padding: 14px !important; }
+  .main-layout { flex-direction: column !important; height: auto !important; }
+  .content-body { flex-direction: column; }
+  .checkout-panel { width: 100% !important; border-left: none !important; border-top: 1px solid var(--border-color); }
+  .top-cards, .charts-section, .alerts-section { grid-template-columns: 1fr !important; }
+  .navbar { left: 0 !important; width: 100% !important; padding: 12px 14px !important; }
+  .sidebar { position: static !important; width: 100% !important; height: auto !important; }
+  .main-content { margin-left: 0 !important; }
+}

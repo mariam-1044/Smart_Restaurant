@@ -1,0 +1,116 @@
+:root {
+  --green-primary: #1F7A3F;
+  --green-hover: #176A35;
+  --dark-bg: #0D1F17;
+  --input-bg:white;
+  --text-white: #ffffff;
+  --text-gray: #b0b0b0; /* لون أهدى للعين */
+  --transition: all 0.25s ease-in-out;
+}
+
+.auth-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, var(--green-primary) 50%, #f4f7f6 50%);
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; /* خطوط نظام مريحة */
+}
+
+.site-title {
+  color: var(--text-white);
+  font-size: 28px; /* صغرنا العنوان ليكون أنيقاً وليس ضخماً */
+  font-weight: 600;
+  margin-bottom: 25px;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.auth-box {
+  background: var(--dark-bg);
+  padding: 40px 45px; /* مسافات متوازنة */
+  width: 100%;
+  max-width: 420px; /* عرض مثالي ومريح للنظر */
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+}
+
+.login-title {
+  color: var(--green-primary);
+  font-size: 22px; /* حجم هادئ وواضح */
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.auth-box input {
+  width: 100%;
+  padding: 12px 16px; /* حجم متوسط ومريح */
+  border-radius: 10px;
+  border: 1.5px solid transparent;
+  background-color: var(--input-bg);
+  color: black;
+  font-size: 15px; /* خط مثالي للقراءة */
+  box-sizing: border-box;
+  outline: none;
+  transition: var(--transition);
+  margin-bottom: 12px;
+}
+
+.auth-box input:focus {
+  border-color: var(--green-primary);
+  background-color:white;
+  /* توهج خفيف جداً غير مزعج */
+  box-shadow: 0 0 8px rgba(15, 157, 88, 0.15);
+}
+
+.auth-box button {
+  width: 100%;
+  padding: 14px;
+  background: var(--green-primary);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px; /* حجم خط الزر متناسق مع المدخلات */
+  font-weight: 600;
+  margin-top: 10px;
+  transition: var(--transition);
+}
+
+.auth-box button:hover {
+  background-color: var(--green-hover);
+  transform: translateY(-1px); /* حركة بسيطة جداً */
+}
+
+.login-footer {
+  margin-top: 20px;
+  color: var(--text-gray);
+  font-size: 14px; /* خط صغير وناعم للروابط */
+  text-align: center;
+}
+
+.login-footer a {
+  color: var(--green-primary);
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}
+
+/* تنعيم الحركات */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.auth-box { animation: fadeIn 0.5s ease-in; }

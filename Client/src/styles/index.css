@@ -1,0 +1,199 @@
+/* =====================================================================
+ * Gusteau Design System — "Green AI Dining"
+ * Clean, modern, operational brand language for an AI-powered Smart
+ * Restaurant dashboard. Built from the Gusteau logo: deep forest green,
+ * bright lime highlights, white utensil/AI detailing.
+ *
+ * Tokens are exposed as CSS variables so any existing stylesheet that
+ * already references --bg-primary / --text-primary / --border-color
+ * inherits the new look automatically. Legacy accent names
+ * (--accent-red, --accent-gold) are intentionally kept but remapped to
+ * the green/lime palette so existing class usage stays intact without a
+ * sweeping rename.
+ * ===================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Surfaces — Gusteau Light (soft mint canvas, white cards) */
+  --bg-primary: #F4FAF4;
+  --bg-secondary: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --bg-elevated: #EAF3EC;
+
+  /* Text */
+  --text-primary: #102018;
+  --text-secondary: #647067;
+  --text-muted: #8A968C;
+
+  /* Borders */
+  --border-color: rgba(16, 32, 24, 0.10);
+  --border-strong: rgba(16, 32, 24, 0.18);
+
+  /* Brand — forest greens + lime accent (from the logo) */
+  --brand-forest: #0B3D2E;
+  --brand-forest-2: #123D2F;
+  --accent-active: #1F7A3F;     /* lively action green (buttons, links, active) */
+  --accent-mint: #52B788;       /* fresh secondary green */
+  --accent-lime: #9BE22D;       /* bright lime — highlights / focus / AI only */
+  --accent-lime-soft: #A3E635;
+
+  /* Legacy accent aliases — remapped onto the green palette.
+     (Names retained so existing component CSS keeps working.) */
+  --accent-red: var(--accent-active);        /* primary action -> green */
+  --accent-red-soft: var(--accent-mint);
+  --accent-gold: #15803D;                    /* highlight role -> deep green (reads on white) */
+  --accent-gold-soft: #1F7A3F;
+  --accent-green: #10B981;                    /* success-tone green (kept distinct) */
+  --accent-blue: #2563EB;                     /* info-tone blue (kept distinct) */
+  --accent-primary: var(--accent-active);
+
+  /* Status — kept readable + distinct from brand green */
+  --status-success-bg: rgba(16, 185, 129, 0.14);
+  --status-success-fg: #047857;
+  --status-warn-bg: rgba(245, 158, 11, 0.16);
+  --status-warn-fg: #B45309;
+  --status-danger-bg: rgba(220, 38, 38, 0.12);
+  --status-danger-fg: #B91C1C;
+  --status-info-bg: rgba(37, 99, 235, 0.12);
+  --status-info-fg: #1D4ED8;
+
+  /* Glow / shadow */
+  --glow-red: 0 0 24px rgba(31, 122, 63, 0.30);     /* green glow */
+  --glow-gold: 0 0 18px rgba(155, 226, 45, 0.40);   /* lime glow */
+  --glow-green: 0 0 16px rgba(16, 185, 129, 0.35);
+  --glow-lime: 0 0 18px rgba(155, 226, 45, 0.45);
+  --shadow-soft: 0 8px 24px rgba(16, 32, 24, 0.06);
+  --shadow-elev: 0 18px 48px rgba(16, 32, 24, 0.10);
+
+  /* Typography */
+  --font-heading: 'Outfit', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Geometry */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+
+  /* Motion */
+  --ease-out-expo: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out-expo: cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+/* Gusteau Dark — deep forest night mode. Activated by data-theme="dark". */
+[data-theme="dark"] {
+  --bg-primary: #07130E;
+  --bg-secondary: #0D1F17;
+  --bg-card: rgba(255, 255, 255, 0.04);
+  --bg-elevated: #12281D;
+
+  --text-primary: #EAF5EC;
+  --text-secondary: #9DB0A4;
+  --text-muted: #6B7E72;
+
+  --border-color: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.16);
+
+  /* Brighter accents so green/lime stay legible on the dark forest base */
+  --accent-active: #2E9D52;
+  --accent-mint: #6FCF97;
+  --accent-gold: #34D399;
+  --accent-gold-soft: #52B788;
+
+  --status-success-bg: rgba(16, 185, 129, 0.18);
+  --status-success-fg: #34D399;
+  --status-warn-bg: rgba(245, 158, 11, 0.18);
+  --status-warn-fg: #FBBF24;
+  --status-danger-bg: rgba(220, 38, 38, 0.22);
+  --status-danger-fg: #F87171;
+  --status-info-bg: rgba(37, 99, 235, 0.18);
+  --status-info-fg: #60A5FA;
+
+  --shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.45);
+  --shadow-elev: 0 24px 60px rgba(0, 0, 0, 0.55);
+}
+
+/* ---------------------------------------------------------------------
+ * Base resets & typography
+ * ------------------------------------------------------------------- */
+* { box-sizing: border-box; }
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 220ms var(--ease-out-expo), color 220ms var(--ease-out-expo);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+}
+
+/* ---------------------------------------------------------------------
+ * Scrollbar (subtle in dark mode)
+ * ------------------------------------------------------------------- */
+[data-theme="dark"] ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+[data-theme="dark"] ::-webkit-scrollbar-track {
+  background: transparent;
+}
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+}
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+/* ---------------------------------------------------------------------
+ * Reusable Gusteau helpers
+ * ------------------------------------------------------------------- */
+.geatsu-glass {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: var(--radius-lg);
+}
+
+.geatsu-glow-red { box-shadow: var(--glow-green); }
+.geatsu-glow-gold { box-shadow: var(--glow-lime); }
+
+/* Page transition fade — applied to route containers via .page-fade */
+@keyframes geatsuFadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.page-fade {
+  animation: geatsuFadeIn 360ms var(--ease-out-expo) both;
+}
+
+/* Skeleton shimmer */
+@keyframes geatsuShimmer {
+  0% { background-position: -240px 0; }
+  100% { background-position: 240px 0; }
+}
+
+/* Subtle pulsing accent ring used on active filter pills, AI indicators, etc. */
+@keyframes geatsuPulseRed {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(155, 226, 45, 0.50); }
+  50% { box-shadow: 0 0 0 8px rgba(155, 226, 45, 0); }
+}
+.geatsu-pulse-red {
+  animation: geatsuPulseRed 2.4s var(--ease-in-out-expo) infinite;
+}

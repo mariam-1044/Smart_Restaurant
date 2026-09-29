@@ -1,0 +1,16 @@
+{
+  "name": "smart-restaurant-e2e",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:report": "playwright show-report",
+    "test:all": "npm --prefix Server test && npm --prefix Client test && playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.2",
+    "@types/node": "^20.17.6",
+    "dotenv": "^16.4.5"
+  }
+}

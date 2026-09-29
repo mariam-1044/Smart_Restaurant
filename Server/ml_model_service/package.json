@@ -1,0 +1,13 @@
+{
+  "name": "ml-model-service",
+  "version": "1.0.0",
+  "description": "Mock ML Model Service for SmartRestaurant",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  }
+}

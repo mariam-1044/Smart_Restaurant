@@ -1,0 +1,274 @@
+:root {
+  --wood-dark: #0B3D2E;
+  --accent: #1F7A3F;
+  --soft-white: #ffffff;
+  --bg-gray: var(--bg-primary);
+  /* NOTE: intentionally NOT redefining --border-color here — inherit the
+     global Gusteau token so POS borders stay theme-aware in light/dark. */
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+.main-layout {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* --- Sidebar (ثابت كما طلبت) --- */
+.side-navigation {
+  width: 260px;
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+              url('https://www.transparenttextures.com/patterns/wood-pattern.png'), 
+              var(--wood-dark);
+  color: white;
+  padding: 20px;
+  flex-shrink: 0;
+}
+
+.brand-box {
+  font-size: 28px;
+  font-family: 'Georgia', serif;
+  text-align: center;
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 20px;
+}
+.brand-box span { color: var(--accent); }
+
+.cat-link {
+  width: 100%; padding: 16px; background: transparent; border: none;
+  color: #ddd; text-align: left; font-size: 17px; cursor: pointer;
+  transition: 0.3s; border-radius: 8px; margin-bottom: 5px;
+}
+.cat-link.active, .cat-link:hover {
+  background: rgba(255,255,255,0.15); color: white; padding-left: 25px;
+}
+
+/* --- Navbar (ثابت كما طلبت) --- */
+.right-side-container { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+
+.top-navbar {
+  height: 70px; background: white; border-bottom: 2px solid var(--border-color);
+  display: grid; grid-template-columns: 1fr 2fr 1fr; align-items: center; padding: 0 30px;
+}
+.nav-title { text-align: center; font-size: 18px; font-weight: 700; color: #333; }
+.nav-search input { padding: 8px 15px; border: 1px solid #ddd; border-radius: 20px; width: 200px; outline: none; }
+
+.content-body { display: flex; flex: 1; overflow: hidden; }
+
+/* --- Menu Items (التعديل: تصغير مريح للعين) --- */
+.items-display {
+  flex: 1; padding: 25px; background-color: var(--bg-gray); overflow-y: auto;
+}
+
+.items-grid {
+  display: grid;
+  /* تصغير الكارت ليصبح الحد الأدنى 180px بدل 220px */
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); 
+  gap: 20px;
+}
+
+.food-item-card {
+  background: white; border-radius: 12px; overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05); border: 1px solid var(--border-color);
+  transition: 0.3s;
+}
+.food-item-card:hover { transform: translateY(-4px); }
+
+/* تصغير ارتفاع الصورة */
+.food-item-card img { width: 100%; height: 135px; object-fit: cover; }
+
+.food-item-info { padding: 12px; }
+.food-item-info h4 { font-size: 15px; margin-bottom: 6px; color: #333; }
+
+.price-action { display: flex; justify-content: space-between; align-items: center; }
+.price-action span { font-weight: bold; font-size: 16px; color: var(--accent); }
+.price-action button {
+  background: var(--accent); color: white; border: none;
+  width: 30px; height: 30px; border-radius: 6px; cursor: pointer; font-size: 16px;
+}
+
+/* --- Cart & Modal (ثابت كما طلبت) --- */
+.checkout-panel { width: 340px; border-left: 2px solid var(--border-color); background: white; display: flex; flex-direction: column; }
+.cart-header { padding: 20px; font-size: 19px; font-weight: bold; border-bottom: 1px solid var(--border-color); }
+.cart-items-list { flex: 1; padding: 20px; overflow-y: auto; }
+.cart-item-row { margin-bottom: 15px; padding-bottom: 10px; border-bottom: 1px dashed #eee; }
+.item-meta { display: flex; justify-content: space-between; font-size: 14px; margin-bottom: 8px; }
+.item-controls { display: flex; align-items: center; gap: 10px; }
+.item-controls button { width: 25px; height: 25px; border: 1px solid #ddd; background: white; cursor: pointer; }
+
+.cart-summary { padding: 25px; background: #fafafa; border-top: 2px solid var(--border-color); }
+.btn-confirm-order { width: 100%; padding: 15px; background: var(--accent); color: white; border: none; border-radius: 10px; font-size: 17px; font-weight: bold; cursor: pointer; }
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.6); display: flex; justify-content: center; align-items: center;
+  z-index: 1000; backdrop-filter: blur(4px);
+}
+.modal-container { background: white; width: 420px; max-width: 92vw; max-height: 90vh; overflow-y: auto; border-radius: 15px; padding: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
+.modal-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px; }
+.user-form input { width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #ddd; border-radius: 8px; }
+.input-group { margin-bottom: 15px; }
+.submit-order-btn { width: 100%; padding: 14px; background: var(--accent); color: white; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; margin-top: 10px; }
+/* كارت النجاح */
+.success-card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  animation: popIn 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.success-icon {
+  width: 80px;
+  height: 80px;
+  background: #27ae60;
+  color: white;
+  font-size: 40px;
+  line-height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  box-shadow: 0 10px 20px rgba(39, 174, 96, 0.3);
+}
+
+.success-card h2 {
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.success-card p {
+  color: var(--text-secondary);
+  margin: 5px 0;
+}
+
+.order-details {
+  background: #f9fafb;
+  padding: 15px;
+  border-radius: 12px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px dashed #ddd;
+}
+
+.total-price {
+  color: var(--accent-active);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.done-btn {
+  background: var(--accent-active);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.done-btn:hover {
+  background: var(--brand-forest);
+  transform: translateY(-2px);
+}
+
+/* أنيميشن دخول المودال */
+@keyframes popIn {
+  from { transform: scale(0.5); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+
+.close-btn {
+  background: #f3f4f6;
+  border: none;
+  font-size: 20px;
+  color: #666;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+
+.close-btn:hover {
+  background: #fee2e2;
+  color: #ef4444;
+}
+
+/* الفورم */
+.customer-details-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px; /* مسافة متساوية بين الحقول */
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* عشان الكلام يبقى عالشمال صح */
+}
+
+.input-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.input-group input {
+  width: 100% !important;
+  padding: 14px 16px;
+  border: 2px solid #f3f4f6; /* لون هادي */
+  border-radius: 12px;
+  font-size: 15px;
+  color: #1f2937;
+  transition: all 0.3s ease;
+  background: #f9fafb;
+}
+
+.input-group input:focus {
+  border-color: var(--accent, #4caf50);
+  background: white;
+  box-shadow: 0 0 0 4px rgba(76, 175, 80, 0.1);
+  outline: none;
+}
+
+.submit-order-btn {
+  width: 100%;
+  padding: 16px;
+  background: var(--accent, #4caf50);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.submit-order-btn:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes slideIn {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}

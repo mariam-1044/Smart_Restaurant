@@ -1,0 +1,246 @@
+openapi: 3.0.3
+info:
+  title: Smart Restaurant — Internal ML Inference Service (Python FastAPI)
+  version: 1.0.0
+  description: >
+    Internal-only inference service. Reachable only from the Node
+    orchestrator on the local/Docker network (port 5002). NO authentication
+    on this surface — network isolation is the only protection. Do NOT
+    expose this service publicly.
+
+servers:
+  - url: http://localhost:5002/v1
+    description: Local dev
+  - url: http://ml:5002/v1
+    description: Docker / production internal network
+
+tags:
+  - name: Forecasting
+  - name: Recommendations
+  - name: Market Basket
+  - name: Pricing
+  - name: Health
+
+components:
+  schemas:
+    Error:
+      type: object
+      required: [error]
+      properties:
+        error:
+          type: object
+          required: [code, message]
+          properties:
+            code: { type: string }
+            message: { type: string }
+            details: { type: object }
+
+    PredictSalesRequest:
+      type: object
+      required: [dishId, daysAhead]
+      properties:
+        dishId: { type: string }
+        daysAhead: { type: integer, enum: [7, 30] }
+
+    PredictSalesPoint:
+      type: object
+      required: [date, predicted, lower, upper]
+      properties:
+        date: { type: string, format: date }
+        predicted: { type: number }
+        lower: { type: number }
+        upper: { type: number }
+
+    PredictSalesResponse:
+      type: object
+      required: [dishId, coldStart, points]
+      properties:
+        dishId: { type: string }
+        coldStart: { type: boolean }
+        points:
+          type: array
+          items: { $ref: '#/components/schemas/PredictSalesPoint' }
+
+    RecommendRequest:
+      type: object
+      required: [customerId, limit]
+      properties:
+        customerId: { type: string }
+        limit: { type: integer, minimum: 1, maximum: 50 }
+
+    RecommendItem:
+      type: object
+      required: [dishId, score, reason]
+      properties:
+        dishId: { type: string }
+        score: { type: number, minimum: 0, maximum: 1 }
+        reason: { type: string }
+
+    RecommendResponse:
+      type: object
+      required: [customerId, coldStart, basis, items]
+      properties:
+        customerId: { type: string }
+        coldStart: { type: boolean }
+        basis: { type: string, enum: [collaborative, popularity_fallback] }
+        items:
+          type: array
+          items: { $ref: '#/components/schemas/RecommendItem' }
+
+    MarketBasketRule:
+      type: object
+      required: [antecedent, consequent, support, confidence, lift]
+      properties:
+        antecedent:
+          type: array
+          items: { type: string }
+        consequent:
+          type: array
+          items: { type: string }
+        support: { type: number }
+        confidence: { type: number }
+        lift: { type: number }
+
+    MarketBasketRefreshResponse:
+      type: object
+      required: [computedAt, ruleCount]
+      properties:
+        computedAt: { type: string, format: date-time }
+        ruleCount: { type: integer }
+        reason:
+          type: string
+          nullable: true
+          enum: [corpus_too_sparse]
+
+    OptimizePricingRequest:
+      type: object
+      required: [dishId]
+      properties:
+        dishId: { type: string }
+
+    OptimizePricingResponse:
+      type: object
+      required: [dishId, currentPrice, suggestedPrice, multiplier, confidence]
+      properties:
+        dishId: { type: string }
+        currentPrice: { type: number, nullable: true }
+        suggestedPrice: { type: number, nullable: true }
+        multiplier: { type: number, nullable: true }
+        confidence: { type: number, minimum: 0, maximum: 1 }
+        skippedReason:
+          type: string
+          nullable: true
+          enum: [missing_cost_data, insufficient_history]
+
+    HealthResponse:
+      type: object
+      required: [status, lastSuccessAt]
+      properties:
+        status: { type: string, enum: [ok, degraded, error] }
+        lastSuccessAt: { type: string, format: date-time, nullable: true }
+        modelsLoaded:
+          type: object
+          properties:
+            forecasting: { type: integer, description: "count of per-dish models in memory" }
+            recommender: { type: boolean }
+            pricing: { type: boolean }
+
+paths:
+
+  /predict-sales:
+    post:
+      tags: [Forecasting]
+      summary: Forecast demand for a single dish
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/PredictSalesRequest' }
+            example: { dishId: "65fa1c2b3e4d5a6f7b8c9d0e", daysAhead: 7 }
+      responses:
+        '200':
+          description: Forecast points
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/PredictSalesResponse' }
+              example:
+                dishId: "65fa1c2b3e4d5a6f7b8c9d0e"
+                coldStart: false
+                points:
+                  - { date: "2026-04-27", predicted: 18.4, lower: 14.2, upper: 22.1 }
+        '422':
+          description: Cold-start requested but underlying baseline empty
+          content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } }
+
+  /recommend:
+    post:
+      tags: [Recommendations]
+      summary: Compute recommendations for one customer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/RecommendRequest' }
+            example: { customerId: "65fa9999...", limit: 5 }
+      responses:
+        '200':
+          description: Recommendations
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/RecommendResponse' }
+
+  /market-basket/refresh:
+    post:
+      tags: [Market Basket]
+      summary: Recompute and cache market basket rules (called by nightly cron)
+      responses:
+        '200':
+          description: Refresh complete
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/MarketBasketRefreshResponse' }
+
+  /market-basket:
+    get:
+      tags: [Market Basket]
+      summary: Read most-recent cached rules
+      responses:
+        '200':
+          description: Rules
+          content:
+            application/json:
+              schema:
+                type: array
+                items: { $ref: '#/components/schemas/MarketBasketRule' }
+
+  /optimize-pricing:
+    post:
+      tags: [Pricing]
+      summary: Suggest an optimized price for one dish
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/OptimizePricingRequest' }
+            example: { dishId: "65fa1c2b3e4d5a6f7b8c9d0e" }
+      responses:
+        '200':
+          description: Suggestion (may carry skippedReason)
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/OptimizePricingResponse' }
+
+  /health:
+    get:
+      tags: [Health]
+      summary: Service health
+      responses:
+        '200':
+          description: Health snapshot
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/HealthResponse' }
+              example:
+                status: ok
+                lastSuccessAt: "2026-04-26T13:42:11Z"
+                modelsLoaded: { forecasting: 187, recommender: true, pricing: true }
